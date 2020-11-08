@@ -1,0 +1,23 @@
+.header {
+    height: 160px;
+    width: 100vw;
+
+    .img {
+        width: 100vw;
+        height: 160px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 2em;
+            color: white;
+            font-weight: normal;
+        }
+    }
+}
