@@ -35,7 +35,14 @@ export default function Home({ fileNames }) {
       <main className={styles.main}>
         <Socials />
         <section className={styles.unia}>
-          <Image src="/unia.png" alt="unia" width={1200} height={80} />
+          <Image
+            src="/unia.png"
+            alt="unia"
+            width={1200}
+            height={80}
+            priority={true}
+            loading="eager"
+          />
         </section>
         <Section
           naglowek="Kyambalo – arcydzieło rąk ludzkich"
