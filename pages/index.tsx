@@ -8,7 +8,7 @@ import Header from "../components/mainHeader";
 import { GetStaticProps } from "next";
 import path from "path";
 import Socials from "../components/socialMedia";
-
+import Image from "next/image";
 export const getStaticProps: GetStaticProps = async (context) => {
   const fs = require("fs");
   const fileNames = fs.readdirSync(
@@ -35,7 +35,7 @@ export default function Home({ fileNames }) {
       <main className={styles.main}>
         <Socials />
         <section className={styles.unia}>
-          <img src="unia.png" alt="unia" />
+          <Image src="/unia.png" alt="unia" width={1200} height={80} />
         </section>
         <Section
           naglowek="Kyambalo – arcydzieło rąk ludzkich"

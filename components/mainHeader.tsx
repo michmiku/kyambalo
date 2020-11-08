@@ -21,7 +21,14 @@ export default function Header({ files, path }) {
         ))}
       </Carousel>
       <div className={styles.logo}>
-        <Image src="/Kyambalo.png" alt="logo" width={630} height={260} />
+        <Image
+          src="/Kyambalo.png"
+          alt="logo"
+          width={630}
+          height={260}
+          loading="eager"
+          priority={true}
+        />
       </div>
     </header>
   );
