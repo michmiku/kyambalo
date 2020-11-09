@@ -7,8 +7,27 @@
     div {
 
         width: 100%;
-        height: auto;
+        height: 100%;
         grid-column: span 6;
+        cursor: pointer;
+        overflow: hidden;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        position: relative;
+        z-index: 1;
+
+        &:hover {
+            background-color: rgba(122, 79, 22, 0.623);
+        }
+
+        div:hover {
+            transform: scale(1.1);
+        }
+
+
     }
 
 }
