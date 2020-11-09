@@ -14,7 +14,7 @@ import BigPicture from "../../components/bigPicture";
 export const getStaticProps: GetStaticProps = async (context) => {
   const fs = require("fs");
   const fileNames = fs.readdirSync(
-    path.join(process.cwd(), "images/przykladowe-realizacje-images")
+    path.join(process.cwd(), "public/przykladowe-realizacje-images")
   );
   const sizeOf = require("image-size");
   let files = [];
@@ -22,7 +22,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
     let dimensions = sizeOf(
       path.join(
         process.cwd(),
-        "images/przykladowe-realizacje-images/" + element + ""
+        "public/przykladowe-realizacje-images/" + element + ""
       )
     );
     files = [

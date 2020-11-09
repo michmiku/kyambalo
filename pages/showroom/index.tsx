@@ -16,11 +16,11 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const sizeOf = require("image-size");
   let files = [];
   const fileNames = fs.readdirSync(
-    path.join(process.cwd(), "images/showroom-images")
+    path.join(process.cwd(), "public/showroom-images")
   );
   fileNames.map((element, key) => {
     let dimensions = sizeOf(
-      path.join(process.cwd(), "images/showroom-images/" + element + "")
+      path.join(process.cwd(), "public/showroom-images/" + element + "")
     );
     files = [
       ...files,
