@@ -9,6 +9,7 @@ import { GetStaticProps } from "next";
 import path from "path";
 import Socials from "../components/socialMedia";
 import Image from "next/image";
+import { NextSeo } from "next-seo";
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const fs = require("fs");
@@ -29,7 +30,36 @@ export default function Home({ fileNames }) {
           Kyambalo - Arcydzieło rąk ludzkich - produkty z kory afrykańskich
           drzew
         </title>
+        <meta
+          name="description"
+          content="Kyambalo to w 100% naturalny materiał powstały w wyniku przetwarzania zewnętrznej kory drzewa Mutuba. Poznaj nasze materiały i produkty. Zapraszamy."
+        ></meta>
+        <meta
+          name="robots"
+          content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        />
+        <meta property="og:locale" content="pl_PL" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Kyambalo - Arcydzieło rąk ludzkich - produkty z kory afrykańskich drzew"
+        />
+        <meta
+          property="og:description"
+          content="Kyambalo to w 100% naturalny materiał powstały w wyniku przetwarzania zewnętrznej kory drzewa Mutuba. Poznaj nasze materiały i produkty. Zapraszamy."
+        />
+        <meta property="og:url" content="https://kyambalo.com/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:description"
+          content="Kyambalo to w 100% naturalny materiał powstały w wyniku przetwarzania zewnętrznej kory drzewa Mutuba. Poznaj nasze materiały i produkty. Zapraszamy."
+        />
+        <meta
+          name="twitter:title"
+          content="Kyambalo - Arcydzieło rąk ludzkich - produkty z kory afrykańskich drzew"
+        />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="canonical" href="https://kyambalo.com/" />
       </Head>
       <Navbar currentSite="home" />
       <Header files={fileNames} path="/slider-images/" />

@@ -56,6 +56,35 @@ export default function Home({ files }) {
     <div className={styles.container}>
       <Head>
         <title>Showroom - produkty z kory afrykańskich drzew</title>
+        <meta
+          name="robots"
+          content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        />
+        <meta
+          name="description"
+          content="Zdjęcia nwowo wykonanego showroomu, który prezentuje przykładowe pozycję wykonane z naszej kory."
+        />
+        <link rel="canonical" href="https://kyambalo.com/showroom/" />
+        <meta property="og:locale" content="pl_PL" />
+        <meta property="og:type" content="photo gallery" />
+        <meta
+          property="og:title"
+          content="Showroom - produkty z kory afrykańskich drzew"
+        />
+        <meta
+          property="og:description"
+          content="Zdjęcia nwowo wykonanego showroomu, który prezentuje przykładowe pozycję wykonane z naszej kory."
+        />
+        <meta property="og:url" content="https://kyambalo.com/showroom/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:description"
+          content="Zdjęcia nwowo wykonanego showroomu, który prezentuje przykładowe pozycję wykonane z naszej kory."
+        />
+        <meta
+          name="twitter:title"
+          content="Showroom - produkty z kory afrykańskich drzew"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar currentSite="showroom" />
@@ -72,6 +101,7 @@ export default function Home({ files }) {
         <section className={styles.section}>
           <Images
             files={files}
+            alt="Kyambalo - showroom"
             path="/showroom-images/"
             handleClick={handleClick}
           />

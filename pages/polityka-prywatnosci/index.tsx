@@ -13,6 +13,41 @@ export default function Home({ fileNames }) {
         <title>
           Polityka Prywatności Kyambalo - produkty z kory afrykańskich drzew
         </title>
+        <meta
+          name="description"
+          content="Poznaj Politykę Prywatności obowiązującą na stronie internetowej Kyambalo. Zapraszamy do poznania się z naszymi ekskluzywnymi produktami i materiałami."
+        />
+        <meta
+          name="robots"
+          content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        />
+        <link
+          rel="canonical"
+          href="https://kyambalo.com/polityka-prywatnosci/"
+        />
+        <meta property="og:locale" content="pl_PL" />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:title"
+          content="Polityka Prywatności Kyambalo - produkty z kory afrykańskich drzew"
+        />
+        <meta
+          property="og:description"
+          content="Poznaj Politykę Prywatności obowiązującą na stronie internetowej Kyambalo. Zapraszamy do poznania się z naszymi ekskluzywnymi produktami i materiałami."
+        />
+        <meta
+          property="og:url"
+          content="https://kyambalo.com/polityka-prywatnosci/"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:description"
+          content="Poznaj Politykę Prywatności obowiązującą na stronie internetowej Kyambalo. Zapraszamy do poznania się z naszymi ekskluzywnymi produktami i materiałami."
+        />
+        <meta
+          name="twitter:title"
+          content="Polityka Prywatności Kyambalo - produkty z kory afrykańskich drzew"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar currentSite="polityka-prywatnosci" />

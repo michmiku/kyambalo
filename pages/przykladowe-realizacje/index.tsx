@@ -60,6 +60,41 @@ export default function Home({ files }) {
         <title>
           Galeria realizacji Kyambalo - produkty z kory afrykańskich drzew
         </title>
+        <meta
+          name="description"
+          content="Materiał Kyambalo ze względu na liczne możliwości użytkowe doskonale sprawdza się jako element wystroju i dekoracji wnętrz. Poznaj realizacje Kyambalo."
+        />
+        <meta
+          name="robots"
+          content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        />
+        <link
+          rel="canonical"
+          href="https://kyambalo.com/przykladowe-realizacje/"
+        />
+        <meta property="og:locale" content="pl_PL" />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:title"
+          content="Galeria realizacji Kyambalo - produkty z kory afrykańskich drzew"
+        />
+        <meta
+          property="og:description"
+          content="Materiał Kyambalo ze względu na liczne możliwości użytkowe doskonale sprawdza się jako element wystroju i dekoracji wnętrz. Poznaj realizacje Kyambalo."
+        />
+        <meta
+          property="og:url"
+          content="https://kyambalo.com/przykladowe-realizacje/"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:description"
+          content="Materiał Kyambalo ze względu na liczne możliwości użytkowe doskonale sprawdza się jako element wystroju i dekoracji wnętrz. Poznaj realizacje Kyambalo."
+        />
+        <meta
+          name="twitter:title"
+          content="Galeria realizacji Kyambalo - produkty z kory afrykańskich drzew"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar currentSite="przykladowe-realizacje" />
@@ -76,6 +111,7 @@ export default function Home({ files }) {
         <section className={styles.section}>
           <Images
             files={files}
+            alt="Galeria realizacji Kyambalo"
             path="/przykladowe-realizacje-images/"
             handleClick={handleClick}
           />

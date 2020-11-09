@@ -12,6 +12,35 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Kontakt Kyambalo - produkty z kory afrykańskich drzew</title>
+        <meta
+          name="description"
+          content="Chcesz dowiedzieć się czegoś więcej na temat marki Kyambalo? Zapraszamy do kontaktu z nami i naszego showroomu w Krakowie przy ul. Zawiłej 69."
+        />
+        <meta
+          name="robots"
+          content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        />
+        <link rel="canonical" href="https://kyambalo.com/kontakt/" />
+        <meta property="og:locale" content="pl_PL" />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:title"
+          content="Kontakt Kyambalo - produkty z kory afrykańskich drzew"
+        />
+        <meta
+          property="og:description"
+          content="Chcesz dowiedzieć się czegoś więcej na temat marki Kyambalo? Zapraszamy do kontaktu z nami i naszego showroomu w Krakowie przy ul. Zawiłej 69."
+        />
+        <meta property="og:url" content="https://kyambalo.com/kontakt/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:description"
+          content="Chcesz dowiedzieć się czegoś więcej na temat marki Kyambalo? Zapraszamy do kontaktu z nami i naszego showroomu w Krakowie przy ul. Zawiłej 69."
+        />
+        <meta
+          name="twitter:title"
+          content="Kontakt Kyambalo - produkty z kory afrykańskich drzew"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar currentSite="kontakt" />

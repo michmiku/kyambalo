@@ -55,8 +55,37 @@ export default function Home({ files }) {
     <div className={styles.container}>
       <Head>
         <title>
-          Poznaj Kyambalo - Arcydzieło rąk ludzkich - produkty z kory drzew
+          Materiał Kyambalo - Arcydzieło rąk ludzkich - produkty z kory drzew
         </title>
+        <meta
+          name="description"
+          content="Kyambalo oprócz swej wyjątkowości wynikającej z historii i procesu pozyskiwania, zachwyca swoją estetyką oraz niepowtarzalnością."
+        />
+        <meta
+          name="robots"
+          content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        />
+        <link rel="canonical" href="https://kyambalo.com/nasz-material/" />
+        <meta property="og:locale" content="pl_PL" />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:title"
+          content="Materiał Kyambalo - produkty z kory afrykańskich drzew"
+        />
+        <meta
+          property="og:description"
+          content="Kyambalo oprócz swej wyjątkowości wynikającej z historii i procesu pozyskiwania, zachwyca swoją estetyką oraz niepowtarzalnością."
+        />
+        <meta property="og:url" content="https://kyambalo.com/nasz-material/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:description"
+          content="Kyambalo oprócz swej wyjątkowości wynikającej z historii i procesu pozyskiwania, zachwyca swoją estetyką oraz niepowtarzalnością."
+        />
+        <meta
+          name="twitter:title"
+          content="Materiał Kyambalo - produkty z kory afrykańskich drzew"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar currentSite="nasz-material" />
@@ -151,6 +180,7 @@ export default function Home({ files }) {
           </ul>
           <Images
             files={files}
+            alt="Materiał Kyambalo"
             path="/nasz-material-images/"
             handleClick={handleClick}
           />

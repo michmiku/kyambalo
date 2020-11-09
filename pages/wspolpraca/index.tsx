@@ -55,8 +55,38 @@ export default function Home({ files }) {
     <div className={styles.container}>
       <Head>
         <title>
-          Poznaj Kyambalo - Arcydzieło rąk ludzkich - produkty z kory drzew
+          Współpraca z Kyambalo - Arcydzieło rąk ludzkich - produkty z kory
+          drzew
         </title>
+        <meta
+          name="description"
+          content="Jeśli masz ciekawy pomysł jak wykorzystać nasz materiał w swoim projekcie, zdradź go nam! Zapraszamy osoby z pasją, które są otware na ciekawą współpracę."
+        />
+        <meta
+          name="robots"
+          content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        />
+        <link rel="canonical" href="https://kyambalo.com/wspolpraca/" />
+        <meta property="og:locale" content="pl_PL" />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:title"
+          content="Współpraca Kyambalo - produkty z kory afrykańskich drzew"
+        />
+        <meta
+          property="og:description"
+          content="Jeśli masz ciekawy pomysł jak wykorzystać nasz materiał w swoim projekcie, zdradź go nam! Zapraszamy osoby z pasją, które są otware na ciekawą współpracę."
+        />
+        <meta property="og:url" content="https://kyambalo.com/wspolpraca/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:description"
+          content="Jeśli masz ciekawy pomysł jak wykorzystać nasz materiał w swoim projekcie, zdradź go nam! Zapraszamy osoby z pasją, które są otware na ciekawą współpracę."
+        />
+        <meta
+          name="twitter:title"
+          content="Współpraca Kyambalo - produkty z kory afrykańskich drzew"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar currentSite="wspolpraca" />
@@ -95,6 +125,7 @@ export default function Home({ files }) {
           </p>
           <Images
             files={files}
+            alt="Współpraca z Kyambalo"
             path="/wspolpraca-images/"
             handleClick={handleClick}
           />

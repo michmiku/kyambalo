@@ -57,7 +57,40 @@ export default function Home({ files }) {
         <title>
           Poznaj Kyambalo - Arcydzieło rąk ludzkich - produkty z kory drzew
         </title>
-        <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="Naszym celem było wprowadzenie na rynek polski materiału z kory afrykańskich drzew, wytwarzanego ręcznie przez ugandyjskich farmerów z plemienia Baganda."
+        />
+        <meta
+          name="robots"
+          content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        />
+        <link rel="canonical" href="https://kyambalo.com/poznaj-kyambalo/" />
+        <meta property="og:locale" content="pl_PL" />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:title"
+          content="Poznaj Kyambalo - Arcydzieło rąk ludzkich - produkty z kory drzew"
+        />
+        <meta
+          property="og:description"
+          content="Naszym celem było wprowadzenie na rynek polski materiału z kory afrykańskich drzew, wytwarzanego ręcznie przez ugandyjskich farmerów z plemienia Baganda."
+        />
+        <meta
+          property="og:url"
+          content="https://kyambalo.com/poznaj-kyambalo/"
+        />
+        <meta property="og:image" content="/unia.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:description"
+          content="Naszym celem było wprowadzenie na rynek polski materiału z kory afrykańskich drzew, wytwarzanego ręcznie przez ugandyjskich farmerów z plemienia Baganda."
+        />
+        <meta
+          name="twitter:title"
+          content="Poznaj Kyambalo - Arcydzieło rąk ludzkich - produkty z kory drzew"
+        />
+        <meta name="twitter:image" content="/unia.png" />
       </Head>
       <Navbar currentSite="poznaj-kyambalo" />
       <Header img="bg1.jpg" tytul="POZNAJ KYAMBALO" />
@@ -172,6 +205,7 @@ export default function Home({ files }) {
           </p>
           <Images
             files={files}
+            alt="Poznaj Kyambalo"
             path="/poznaj-images/"
             handleClick={handleClick}
           />

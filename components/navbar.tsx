@@ -73,8 +73,8 @@ export default function Navbar({ currentSite }) {
               </li>
             )}
           </Link>
-          <Link href="./architektura">
-            {currentSite === "architektura" ? (
+          <Link href="./architektura-wnetrz">
+            {currentSite === "architektura-wnetrz" ? (
               <li className={styles.selected}>
                 <span className={`${styles.hover} ${styles.hover3}`}>
                   Architektura
@@ -180,8 +180,8 @@ export default function Navbar({ currentSite }) {
               <li>Nasz Materiał</li>
             )}
           </Link>
-          <Link href="./architektura">
-            {currentSite === "architektura" ? (
+          <Link href="./architektura-wnetrz">
+            {currentSite === "architektura-wnetrz" ? (
               <li className={styles.selected} onClick={() => handleMenuClick()}>
                 Architektura
               </li>

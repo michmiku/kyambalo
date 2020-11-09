@@ -13,11 +13,47 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>
-          Poznaj Kyambalo - Arcydzieło rąk ludzkich - produkty z kory drzew
+          Architektura wnętrz Kyambalo - Arcydzieło rąk ludzkich - produkty z
+          kory drzew
         </title>
+        <meta
+          name="description"
+          content="Z naszego materiału wytwarzamy niepowtarzalne pokrycia ścienne takie jak tapety, panele, oleiny do mebli i drzwi, a także elementy dekoracyjne wnętrz."
+        />
+        <meta
+          name="robots"
+          content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        />
+        <link
+          rel="canonical"
+          href="https://kyambalo.com/architektura-wnetrz/"
+        />
+        <meta property="og:locale" content="pl_PL" />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:title"
+          content="Architektura wnętrz Kyambalo - Arcydzieło rąk ludzkich"
+        />
+        <meta
+          property="og:description"
+          content="Z naszego materiału wytwarzamy niepowtarzalne pokrycia ścienne takie jak tapety, panele, oleiny do mebli i drzwi, a także elementy dekoracyjne wnętrz."
+        />
+        <meta
+          property="og:url"
+          content="https://kyambalo.com/architektura-wnetrz/"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:description"
+          content="Z naszego materiału wytwarzamy niepowtarzalne pokrycia ścienne takie jak tapety, panele, oleiny do mebli i drzwi, a także elementy dekoracyjne wnętrz."
+        />
+        <meta
+          name="twitter:title"
+          content="Architektura wnętrz Kyambalo - Arcydzieło rąk ludzkich"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar currentSite="architektura" />
+      <Navbar currentSite="architektura-wnetrz" />
       <Header img="bg5.jpg" tytul="ARCHITEKTURA WNĘTRZ" />
       <main className={styles.main}>
         <Socials />
@@ -48,7 +84,7 @@ export default function Home() {
             <div>
               <Image
                 src="/Kyambalo-realizacje.jpg"
-                alt="PRZYKŁADOWE REALIZACJE"
+                alt="Przykładowe realizacje"
                 width={300}
                 height={150}
               />
@@ -59,7 +95,7 @@ export default function Home() {
             <div>
               <Image
                 src="/kyambalo-probki-materialow.jpg"
-                alt="WZORY PRÓBEK MATERIAŁU"
+                alt="Wzory próbek materiału"
                 width={300}
                 height={150}
               />
@@ -70,7 +106,7 @@ export default function Home() {
         <ContactForm />
       </main>
 
-      <Footer currentSite="architektura" />
+      <Footer currentSite="architektura-wnetrz" />
     </div>
   );
 }

@@ -59,6 +59,41 @@ export default function Home({ files }) {
     <div className={styles.container}>
       <Head>
         <title>Wzory próbek materiału Kyambalo - Arcydzieło rąk ludzkich</title>
+        <meta
+          name="description"
+          content="Materiał Kyambalo ze względu na liczne możliwości użytkowe doskonale sprawdza się jako element dekoracji wnętrz. Poznaj wzory próbek materiału Kyambalo."
+        />
+        <meta
+          name="robots"
+          content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        />
+        <link
+          rel="canonical"
+          href="https://kyambalo.com/wzory-probek-materialu/"
+        />
+        <meta property="og:locale" content="pl_PL" />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:title"
+          content="Wzory próbek materiału Kyambalo - Arcydzieło rąk ludzkich"
+        />
+        <meta
+          property="og:description"
+          content="Materiał Kyambalo ze względu na liczne możliwości użytkowe doskonale sprawdza się jako element dekoracji wnętrz. Poznaj wzory próbek materiału Kyambalo."
+        />
+        <meta
+          property="og:url"
+          content="https://kyambalo.com/wzory-probek-materialu/"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:description"
+          content="Materiał Kyambalo ze względu na liczne możliwości użytkowe doskonale sprawdza się jako element dekoracji wnętrz. Poznaj wzory próbek materiału Kyambalo."
+        />
+        <meta
+          name="twitter:title"
+          content="Wzory próbek materiału Kyambalo - Arcydzieło rąk ludzkich"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar currentSite="wzory-probek-materialu" />
@@ -75,6 +110,7 @@ export default function Home({ files }) {
         <section className={styles.section}>
           <Images
             files={files}
+            alt="Wzory próbek materiału Kyambalo"
             path="/wzory-probek-materialu-images/"
             handleClick={handleClick}
           />
