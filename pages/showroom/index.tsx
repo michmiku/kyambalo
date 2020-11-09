@@ -30,6 +30,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
       },
     ];
   });
+  console.log(files);
   return {
     props: {
       files,
