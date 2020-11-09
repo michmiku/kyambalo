@@ -56,21 +56,21 @@ export default function Home({ fileNames }) {
         degradacji przyrodniczych zasobów oraz bez dodawania lub powstawania
         jakichkolwiek szkodliwych substancji. Idealnie spełniający postulaty tak
         ważnego w globalnym ujęciu trendu zrównoważonego rozwoju."
-          img="IMG_4945.jpg"
+          img="/home-images/IMG_4945.jpg"
         />
         <Section
           naglowek="Wyjątkowy materiał z wyjątkowego miejsca"
           paragraf1="Kyambalo składa się wyłącznie z włókien celulozy, które w efekcie długotrwałej i żmudnej obróbki tworzą jedyną w swoim rodzaju siatkę ułożonych w nieregularny sposób nici."
           paragraf2="W końcowej fazie produkcji układają się one w unikalną oraz niepowtarzalną strukturę."
           paragraf3="Proces powstawania materiału jest skomplikowany i bardzo czasochłonny. Wytwarzany jest w tradycyjny sposób, poprzez usuwanie płatów wewnętrznej kory drzewa figowego. Jest ona pozyskiwana bez uszkodzenia rdzenia drzewa. Dodatkowo, w celu zabezpieczenia pnia, jest on owijany liśćmi bananowca, które chronią go przed wysuszeniem zapewniając mu jednocześnie odpowiednią ilość wilgoci."
-          img="IMG_4783.jpg"
+          img="/home-images/IMG_4783.jpg"
         />
         <Section
           naglowek="Niespotykana architektura wnętrz"
           paragraf1="Materiał Kyambalo ze względu na liczne możliwości użytkowe doskonale sprawdza się jako element wystroju i dekoracji wnętrz. Wytwarzamy z niego wyjątkowe i niepowtarzalne pokrycia ścienne takie jak tapety, panele, oleiny do mebli i drzwi, a także elementy dekoracyjne wnętrz, które doskonale znajdują zastosowanie w małych mieszkaniach, domach jednorodzinnych oraz przestrzeniach biurowych i miejscach użyteczności publicznej."
           paragraf2=""
           paragraf3=""
-          img="MZ_043.jpg"
+          img="/home-images/MZ_043.jpg"
         />
         <ContactForm />
       </main>

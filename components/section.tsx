@@ -1,5 +1,6 @@
 import styles from "../styles/Home.module.scss";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Section({
   naglowek,
@@ -14,7 +15,7 @@ export default function Section({
       <p>{paragraf1}</p>
       {paragraf2 === "" ? null : <p>{paragraf2}</p>}
       {paragraf3 === "" ? null : <p>{paragraf3}</p>}
-      <img src={img} alt={img} />
+      <Image src={img} alt={img} width={4000} height={2500} loading="eager" />
       <Link href="./nasz-material">
         <div className={styles.button}>DOWIEDZ SIĘ WIĘCEJ</div>
       </Link>
