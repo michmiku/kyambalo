@@ -15,7 +15,7 @@ export default function Section({
       <p>{paragraf1}</p>
       {paragraf2 === "" ? null : <p>{paragraf2}</p>}
       {paragraf3 === "" ? null : <p>{paragraf3}</p>}
-      <Image src={img} alt={img} width={4000} height={2500} loading="eager" />
+      <Image src={img} alt={img} width={4000} height={2500} />
       <Link href="./nasz-material">
         <div className={styles.button}>DOWIEDZ SIĘ WIĘCEJ</div>
       </Link>
