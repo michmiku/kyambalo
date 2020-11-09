@@ -1,0 +1,42 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.842);
+    position: fixed;
+    left: 0;
+    top: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .imgContainer {
+        width: 90vw;
+        height: 90vh;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 50px;
+    }
+
+    .close {
+        position: absolute;
+        top: 8vh;
+        right: 3vw;
+        font-size: 2em;
+        color: white;
+        cursor: pointer;
+        z-index: 3;
+
+        &:hover {
+            color: rgb(179, 136, 87);
+            transform: scale(1.2);
+            transition: all .2s ease-in-out;
+        }
+    }
+}
