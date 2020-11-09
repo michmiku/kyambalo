@@ -9,6 +9,7 @@ import { GetStaticProps } from "next";
 import path from "path";
 import Socials from "../components/socialMedia";
 import Image from "next/image";
+
 export const getStaticProps: GetStaticProps = async (context) => {
   const fs = require("fs");
   const fileNames = fs.readdirSync(

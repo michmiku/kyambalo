@@ -15,7 +15,6 @@ export default function Header({ files, path }) {
               height={1000}
               className={styles.img}
               quality={100}
-              loading="eager"
             />
           </Carousel.Item>
         ))}
