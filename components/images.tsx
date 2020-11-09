@@ -5,7 +5,7 @@ export default function Images({ files, alt, path, handleClick }) {
   return (
     <div className={styles.grid}>
       {files.map((image, key) => (
-        <div key={key} onClick={(e) => handleClick(image, path, true, e)}>
+        <div key={key} onClick={() => handleClick(image, alt, path, true, key)}>
           <Image
             src={path + image.fileName}
             alt={alt}

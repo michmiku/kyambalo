@@ -18,7 +18,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   );
   const sizeOf = require("image-size");
   let files = [];
-  fileNames.map((element, key) => {
+  fileNames.map((element, id) => {
     let dimensions = sizeOf(
       path.join(process.cwd(), "public/nasz-material-images/" + element + "")
     );
@@ -40,15 +40,19 @@ export const getStaticProps: GetStaticProps = async (context) => {
 export default function Home({ files }) {
   const [bigPicture, setBigPicture] = useState({
     file: "",
+    alt: "",
     path: "",
     state: false,
+    id: "",
   });
 
-  const handleClick = (file, path, state, e) => {
+  const handleClick = (file, alt, path, state, id) => {
     setBigPicture({
       file,
+      alt,
       path,
       state,
+      id,
     });
   };
   return (
@@ -93,8 +97,11 @@ export default function Home({ files }) {
       {bigPicture.state ? (
         <BigPicture
           file={bigPicture.file}
+          alt={bigPicture.alt}
           path={bigPicture.path}
           handleClick={handleClick}
+          files={files}
+          id={bigPicture.id}
         />
       ) : null}
       <main className={styles.main}>
