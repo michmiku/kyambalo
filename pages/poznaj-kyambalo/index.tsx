@@ -14,13 +14,13 @@ import BigPicture from "../../components/bigPicture";
 export const getStaticProps: GetStaticProps = async (context) => {
   const fs = require("fs");
   const fileNames = fs.readdirSync(
-    path.join(process.cwd(), "public/poznaj-images")
+    path.join(process.cwd(), "images/poznaj-images")
   );
   const sizeOf = require("image-size");
   let files = [];
   fileNames.map((element, key) => {
     let dimensions = sizeOf(
-      path.join(process.cwd(), "public/poznaj-images/" + element + "")
+      path.join(process.cwd(), "images/poznaj-images/" + element + "")
     );
     files = [
       ...files,
