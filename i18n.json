@@ -1,0 +1,16 @@
+{
+    "locales": ["pl", "en"],
+    "defaultLocale": "pl",
+    "pages": {
+      "*": ["common"],
+      "/": ["home"],
+      "/architektura-wnetrz": ["architektura-wnetrz"],
+      "/kontakt": ["kontakt"],
+      "/nasz-material": ["nasz-material"],
+      "/polityka-prywatnosci":["polityka-prywatnosci"],
+      "/poznaj-kyambalo":["poznaj-kyambalo"],
+      "/przykladowe-realizacje":["przykladowe-realizacje"],
+      "/showroom":["showroom"],
+      "wzory-probek-materialu":["wzory-probek-materialu"]
+    }
+  }

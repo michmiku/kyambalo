@@ -3,8 +3,9 @@ import styles from "../styles/navbar.module.scss";
 import Link from "next/link";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ChangeLanguage from "../components/changeLanguage";
 
-export default function Navbar({ currentSite }) {
+function Navbar({ currentSite, t }: any) {
   const [menuStatus, setMenuStatus] = useState(styles.menuOff);
   const [dimmedBackgroundStatus, setDimmedBackgroundStatus] = useState(
     styles.dimmedBackgroundOff
@@ -44,96 +45,63 @@ export default function Navbar({ currentSite }) {
         </Link>
         <ul className={styles.navbarMenu}>
           <Link href="./poznaj-kyambalo">
-            {currentSite === "poznaj-kyambalo" ? (
-              <li className={styles.selected}>
-                <span className={`${styles.hover} ${styles.hover3}`}>
-                  Poznaj Kyambalo
-                </span>
-              </li>
-            ) : (
-              <li>
-                <span className={`${styles.hover} ${styles.hover3}`}>
-                  Poznaj Kyambalo
-                </span>
-              </li>
-            )}
+            <li
+              className={
+                currentSite === "poznaj-kyambalo" ? styles.selected : null
+              }
+            >
+              <span className={`${styles.hover} ${styles.hover3}`}>
+                Poznaj Kyambalo
+              </span>
+            </li>
           </Link>
           <Link href="./nasz-material">
-            {currentSite === "nasz-material" ? (
-              <li className={styles.selected}>
-                <span className={`${styles.hover} ${styles.hover3}`}>
-                  Nasz Materiał
-                </span>
-              </li>
-            ) : (
-              <li>
-                <span className={`${styles.hover} ${styles.hover3}`}>
-                  Nasz Materiał
-                </span>
-              </li>
-            )}
+            <li
+              className={
+                currentSite === "nasz-material" ? styles.selected : null
+              }
+            >
+              <span className={`${styles.hover} ${styles.hover3}`}>
+                Nasz Materiał
+              </span>
+            </li>
           </Link>
           <Link href="./architektura-wnetrz">
-            {currentSite === "architektura-wnetrz" ? (
-              <li className={styles.selected}>
-                <span className={`${styles.hover} ${styles.hover3}`}>
-                  Architektura
-                </span>
-              </li>
-            ) : (
-              <li>
-                <span className={`${styles.hover} ${styles.hover3}`}>
-                  Architektura
-                </span>
-              </li>
-            )}
+            <li
+              className={
+                currentSite === "architektura-wnetrz" ? styles.selected : null
+              }
+            >
+              <span className={`${styles.hover} ${styles.hover3}`}>
+                Architektura
+              </span>
+            </li>
           </Link>
           <Link href="./wspolpraca">
-            {currentSite === "wspolpraca" ? (
-              <li className={styles.selected}>
-                <span className={`${styles.hover} ${styles.hover3}`}>
-                  Współpraca
-                </span>
-              </li>
-            ) : (
-              <li>
-                <span className={`${styles.hover} ${styles.hover3}`}>
-                  Współpraca
-                </span>
-              </li>
-            )}
+            <li
+              className={currentSite === "wspolpraca" ? styles.selected : null}
+            >
+              <span className={`${styles.hover} ${styles.hover3}`}>
+                Współpraca
+              </span>
+            </li>
           </Link>
           <Link href="./showroom">
-            {currentSite === "showroom" ? (
-              <li className={styles.selected}>
-                <span className={`${styles.hover} ${styles.hover3}`}>
-                  Showroom
-                </span>
-              </li>
-            ) : (
-              <li>
-                <span className={`${styles.hover} ${styles.hover3}`}>
-                  Showroom
-                </span>
-              </li>
-            )}
+            <li className={currentSite === "showroom" ? styles.selected : null}>
+              <span className={`${styles.hover} ${styles.hover3}`}>
+                Showroom
+              </span>
+            </li>
           </Link>
           <Link href="./kontakt">
-            {currentSite === "kontakt" ? (
-              <li className={styles.selected}>
-                <span className={`${styles.hover} ${styles.hover3}`}>
-                  Kontakt
-                </span>
-              </li>
-            ) : (
-              <li>
-                <span className={`${styles.hover} ${styles.hover3}`}>
-                  Kontakt
-                </span>
-              </li>
-            )}
+            <li className={currentSite === "kontakt" ? styles.selected : null}>
+              <span className={`${styles.hover} ${styles.hover3}`}>
+                Kontakt
+              </span>
+            </li>
           </Link>
         </ul>
+        <ChangeLanguage />
         <div className={styles.hamburger} onClick={() => handleMenuClick()}>
           <div className={styles.topBun}></div>
           <div className={styles.meat}></div>
@@ -163,58 +131,58 @@ export default function Navbar({ currentSite }) {
         </div>
         <ul>
           <Link href="./poznaj-kyambalo">
-            {currentSite === "poznaj-kyambalo" ? (
-              <li className={styles.selected} onClick={() => handleMenuClick()}>
-                Poznaj Kyambalo
-              </li>
-            ) : (
-              <li>Poznaj Kyambalo</li>
-            )}
+            <li
+              className={
+                currentSite === "poznaj-kyambalo" ? styles.selected : null
+              }
+              onClick={() => handleMenuClick()}
+            >
+              Poznaj Kyambalo
+            </li>
           </Link>
           <Link href="./nasz-material">
-            {currentSite === "nasz-material" ? (
-              <li className={styles.selected} onClick={() => handleMenuClick()}>
-                Nasz Materiał
-              </li>
-            ) : (
-              <li>Nasz Materiał</li>
-            )}
+            <li
+              className={
+                currentSite === "nasz-material" ? styles.selected : null
+              }
+              onClick={() => handleMenuClick()}
+            >
+              Nasz Materiał
+            </li>
           </Link>
           <Link href="./architektura-wnetrz">
-            {currentSite === "architektura-wnetrz" ? (
-              <li className={styles.selected} onClick={() => handleMenuClick()}>
-                Architektura
-              </li>
-            ) : (
-              <li>Architektura</li>
-            )}
+            <li
+              className={
+                currentSite === "architektura-wnetrz" ? styles.selected : null
+              }
+              onClick={() => handleMenuClick()}
+            >
+              Architektura
+            </li>
           </Link>
           <Link href="./wspolpraca">
-            {currentSite === "wspolpraca" ? (
-              <li className={styles.selected} onClick={() => handleMenuClick()}>
-                Współpraca
-              </li>
-            ) : (
-              <li>Współpraca</li>
-            )}
+            <li
+              className={currentSite === "wspolpraca" ? styles.selected : null}
+              onClick={() => handleMenuClick()}
+            >
+              Współpraca
+            </li>
           </Link>
           <Link href="./showroom">
-            {currentSite === "showroom" ? (
-              <li className={styles.selected} onClick={() => handleMenuClick()}>
-                Showroom
-              </li>
-            ) : (
-              <li>Showroom</li>
-            )}
+            <li
+              className={currentSite === "showroom" ? styles.selected : null}
+              onClick={() => handleMenuClick()}
+            >
+              Showroom
+            </li>
           </Link>
           <Link href="./kontakt">
-            {currentSite === "kontakt" ? (
-              <li className={styles.selected} onClick={() => handleMenuClick()}>
-                Kontakt
-              </li>
-            ) : (
-              <li>Kontakt</li>
-            )}
+            <li
+              className={currentSite === "kontakt" ? styles.selected : null}
+              onClick={() => handleMenuClick()}
+            >
+              Kontakt
+            </li>
           </Link>
         </ul>
         <ul className={styles.socialMedia}>
@@ -247,7 +215,9 @@ export default function Navbar({ currentSite }) {
             </div>
           </li>
         </ul>
+        <ChangeLanguage />
       </div>
     </div>
   );
 }
+export default Navbar;

@@ -1,0 +1,47 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    position: relative;
+    background-color: rgb(241, 241, 241);
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    padding: 20px 10px;
+    background-color: rgb(224, 224, 224);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    * {
+        grid-column: span 12;
+    }
+
+    &:nth-child(2) {
+        background-color: rgb(241, 241, 241);
+
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .section {
+        padding: 20px 10px;
+
+        * {
+
+            grid-column: 2/ 12;
+        }
+
+    }
+
+}

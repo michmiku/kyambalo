@@ -1,7 +1,7 @@
 // @ts-nocheck
 import I18nProvider from 'next-translate/I18nProvider'
 import React from 'react'
-import C from '../../pages_/wzory-probek-materialu/styles.module.scss'
+import C, * as _rest from '../../pages_/wzory-probek-materialu'
 
 export default function Page({ _ns, _lang, ...p }){
   return (
@@ -25,7 +25,7 @@ export const getStaticProps = async ctx => {
   const ns0 = await import(`../../locales/${_lang}/common`).then(m => m.default)
   const _ns = { 'common': ns0 }
   
-    let res = {}
+    let res = _rest.getStaticProps(ctx)
     if(typeof res.then === 'function') res = await res
   
     return { 

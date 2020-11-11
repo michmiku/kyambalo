@@ -18,6 +18,36 @@ $close-width: ($button-size / 10);
         display: grid;
         grid-template-columns: repeat(12, 1fr);
 
+        .languageContainer {
+            position: absolute;
+            right: 0;
+            top: 20px;
+            z-index: 5;
+            width: 80px;
+            height: 20px;
+            display: none;
+
+            div {
+                display: inline;
+                width: 20px;
+                height: 13px;
+                cursor: pointer;
+                transition: all .1s linear;
+
+                &:hover {
+
+                    transform: scale(1.2)
+                }
+
+                &:nth-child(1) {
+                    position: relative;
+                    right: 10px;
+                }
+            }
+
+
+        }
+
         img {
             margin-top: 10px;
             margin-left: 10px;
@@ -383,6 +413,35 @@ $close-width: ($button-size / 10);
             }
         }
 
+        .languageContainer {
+            position: absolute;
+            right: 0;
+            bottom: 20px;
+            z-index: 5;
+            width: 80px;
+            height: 20px;
+
+            div {
+                display: inline;
+                width: 30px;
+                height: 20px;
+                transition: all .1s linear;
+                cursor: pointer;
+
+                &:hover {
+
+                    transform: scale(1.2)
+                }
+
+                &:nth-child(1) {
+                    position: relative;
+                    right: 10px;
+                }
+            }
+
+
+        }
+
         .socialMedia {
             li {
                 display: inline;
@@ -408,6 +467,8 @@ $close-width: ($button-size / 10);
                     }
 
                     a {
+                        margin-top: 5px;
+
                         .facebook {
                             color: #3b5998;
                         }
@@ -480,6 +541,10 @@ $close-width: ($button-size / 10);
 @media screen and (min-width:1200px) {
     .navbarContainer {
         .navbar {
+            .languageContainer {
+                display: inline;
+            }
+
             img {
 
                 margin-top: 10px;
