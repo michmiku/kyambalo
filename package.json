@@ -21,6 +21,7 @@
     "next-translate": "^0.19.5",
     "react": "17.0.1",
     "react-bootstrap": "^1.4.0",
+    "react-cookie-consent": "^6.1.0",
     "react-dom": "17.0.1",
     "sass": "^1.29.0"
   },

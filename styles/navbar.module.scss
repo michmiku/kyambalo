@@ -23,7 +23,7 @@ $close-width: ($button-size / 10);
             right: 0;
             top: 20px;
             z-index: 5;
-            width: 80px;
+            width: 60px;
             height: 20px;
             display: none;
 
@@ -467,7 +467,7 @@ $close-width: ($button-size / 10);
                     }
 
                     a {
-                        margin-top: 5px;
+                        // margin-top: 5px;
 
                         .facebook {
                             color: #3b5998;
