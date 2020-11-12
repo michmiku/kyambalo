@@ -5,7 +5,6 @@ import Header from "../../components/subHeader";
 import ContactForm from "../../components/contactForm";
 import Footer from "../../components/footer";
 import { GetStaticProps } from "next";
-import path from "path";
 import Images from "../../components/images";
 import Socials from "../../components/socialMedia";
 import React, { useState } from "react";
@@ -93,7 +92,7 @@ export default function Home({ publicIds }) {
           <meta name="twitter:image" content="/unia.png" />
         </Head>
         <Navbar currentSite="poznaj-kyambalo" />
-        <Header img="bg1.jpg" tytul="POZNAJ KYAMBALO" />
+        <Header img="bg1.jpg" tytul={t("poznaj-kyambalo:title")} />
         {bigPicture.state ? (
           <BigPicture
             file={bigPicture.file}

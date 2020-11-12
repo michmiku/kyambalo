@@ -9,6 +9,7 @@ import Images from "../../components/images";
 import Socials from "../../components/socialMedia";
 import React, { useState } from "react";
 import BigPicture from "../../components/bigPicture";
+import useTranslation from "next-translate/useTranslation";
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const { cloudinary } = require("../../utils/cloudinary");
@@ -27,6 +28,8 @@ export const getStaticProps: GetStaticProps = async (context) => {
 };
 
 export default function Home({ publicIds }) {
+  const { t, lang } = useTranslation();
+
   const [bigPicture, setBigPicture] = useState({
     file: "",
     alt: "",
@@ -88,7 +91,7 @@ export default function Home({ publicIds }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar currentSite="przykladowe-realizacje" />
-      <Header img="bg1.jpg" tytul="PRZYKLADOWE REALIZACJE" />
+      <Header img="bg1.jpg" tytul={t("przykladowe-realizacje:title")} />
       {bigPicture.state ? (
         <BigPicture
           file={bigPicture.file}

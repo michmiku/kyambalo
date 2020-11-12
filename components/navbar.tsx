@@ -1,11 +1,17 @@
 import React, { useState, useEffect, useRef } from "react";
 import styles from "../styles/navbar.module.scss";
 import Link from "next/link";
-import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import {
+  faFacebook,
+  faInstagram,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ChangeLanguage from "../components/changeLanguage";
+import useTranslation from "next-translate/useTranslation";
 
-function Navbar({ currentSite, t }: any) {
+function Navbar({ currentSite }: any) {
+  const { t, lang } = useTranslation();
   const [menuStatus, setMenuStatus] = useState(styles.menuOff);
   const [dimmedBackgroundStatus, setDimmedBackgroundStatus] = useState(
     styles.dimmedBackgroundOff
@@ -51,7 +57,7 @@ function Navbar({ currentSite, t }: any) {
               }
             >
               <span className={`${styles.hover} ${styles.hover3}`}>
-                Poznaj Kyambalo
+                {t("common:link1")}
               </span>
             </li>
           </Link>
@@ -62,7 +68,7 @@ function Navbar({ currentSite, t }: any) {
               }
             >
               <span className={`${styles.hover} ${styles.hover3}`}>
-                Nasz Materiał
+                {t("common:link2")}
               </span>
             </li>
           </Link>
@@ -73,7 +79,7 @@ function Navbar({ currentSite, t }: any) {
               }
             >
               <span className={`${styles.hover} ${styles.hover3}`}>
-                Architektura
+                {t("common:link3")}
               </span>
             </li>
           </Link>
@@ -82,26 +88,26 @@ function Navbar({ currentSite, t }: any) {
               className={currentSite === "wspolpraca" ? styles.selected : null}
             >
               <span className={`${styles.hover} ${styles.hover3}`}>
-                Współpraca
+                {t("common:link4")}
               </span>
             </li>
           </Link>
           <Link href="./showroom">
             <li className={currentSite === "showroom" ? styles.selected : null}>
               <span className={`${styles.hover} ${styles.hover3}`}>
-                Showroom
+                {t("common:link5")}
               </span>
             </li>
           </Link>
           <Link href="./kontakt">
             <li className={currentSite === "kontakt" ? styles.selected : null}>
               <span className={`${styles.hover} ${styles.hover3}`}>
-                Kontakt
+                {t("common:link6")}
               </span>
             </li>
           </Link>
         </ul>
-        <ChangeLanguage />
+        <ChangeLanguage currentSite={currentSite} />
         <div className={styles.hamburger} onClick={() => handleMenuClick()}>
           <div className={styles.topBun}></div>
           <div className={styles.meat}></div>
@@ -137,7 +143,7 @@ function Navbar({ currentSite, t }: any) {
               }
               onClick={() => handleMenuClick()}
             >
-              Poznaj Kyambalo
+              {t("common:link1")}
             </li>
           </Link>
           <Link href="./nasz-material">
@@ -147,7 +153,7 @@ function Navbar({ currentSite, t }: any) {
               }
               onClick={() => handleMenuClick()}
             >
-              Nasz Materiał
+              {t("common:link2")}
             </li>
           </Link>
           <Link href="./architektura-wnetrz">
@@ -157,7 +163,7 @@ function Navbar({ currentSite, t }: any) {
               }
               onClick={() => handleMenuClick()}
             >
-              Architektura
+              {t("common:link3")}
             </li>
           </Link>
           <Link href="./wspolpraca">
@@ -165,7 +171,7 @@ function Navbar({ currentSite, t }: any) {
               className={currentSite === "wspolpraca" ? styles.selected : null}
               onClick={() => handleMenuClick()}
             >
-              Współpraca
+              {t("common:link4")}
             </li>
           </Link>
           <Link href="./showroom">
@@ -173,7 +179,7 @@ function Navbar({ currentSite, t }: any) {
               className={currentSite === "showroom" ? styles.selected : null}
               onClick={() => handleMenuClick()}
             >
-              Showroom
+              {t("common:link5")}
             </li>
           </Link>
           <Link href="./kontakt">
@@ -181,7 +187,7 @@ function Navbar({ currentSite, t }: any) {
               className={currentSite === "kontakt" ? styles.selected : null}
               onClick={() => handleMenuClick()}
             >
-              Kontakt
+              {t("common:link6")}
             </li>
           </Link>
         </ul>
@@ -214,8 +220,19 @@ function Navbar({ currentSite, t }: any) {
               </a>
             </div>
           </li>
+          <li>
+            <div>
+              <a
+                className={styles.link}
+                href="https://www.youtube.com/channel/UCgCbq5ZGoLe0Qfearg1z4zw/"
+                target="_blank"
+              >
+                <FontAwesomeIcon icon={faYoutube} className={styles.youtube} />
+              </a>
+            </div>
+          </li>
         </ul>
-        <ChangeLanguage />
+        <ChangeLanguage currentSite={currentSite} />
       </div>
     </div>
   );

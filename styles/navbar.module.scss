@@ -445,10 +445,8 @@ $close-width: ($button-size / 10);
                     float: left;
                     display: flex;
                     margin-right: 20px;
-                    width: 40px;
-                    height: 40px;
-                    background-color: rgb(221, 221, 221);
-                    border-radius: 25%;
+                    width: 30px;
+                    height: 30px;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
@@ -459,14 +457,16 @@ $close-width: ($button-size / 10);
                     }
 
                     a {
-                        // margin-top: 5px;
-
                         .facebook {
                             color: #3b5998;
                         }
 
                         .instagram {
                             color: #C13584;
+                        }
+
+                        .youtube {
+                            color: #FF0000;
                         }
 
                     }

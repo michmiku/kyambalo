@@ -6,8 +6,11 @@ import ContactForm from "../../components/contactForm";
 import Footer from "../../components/footer";
 import Header from "../../components/subHeader";
 import Socials from "../../components/socialMedia";
+import useTranslation from "next-translate/useTranslation";
 
 export default function Home() {
+  const { t, lang } = useTranslation();
+
   return (
     <div className={styles.container}>
       <Head>
@@ -44,7 +47,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar currentSite="kontakt" />
-      <Header img="bg2.jpg" tytul="KONTAKT" />
+      <Header img="bg2.jpg" tytul={t("kontakt:title")} />
       <main className={styles.main}>
         <Socials />
         <section className={styles.section}>

@@ -1,45 +1,46 @@
 import styles from "../styles/footer.module.scss";
 import Link from "next/link";
+import useTranslation from "next-translate/useTranslation";
 
 export default function Footer({ currentSite }) {
+  const { t, lang } = useTranslation();
+
   return (
     <footer className={styles.footer}>
-      <p>© 2020 Kyambalo. Wszelkie prawa zastrzeżone.</p>
+      <p>{t("common:rights")}</p>
       <ul>
         <Link href="./">
-          {currentSite === "home" ? (
-            <li className={styles.selected}>Strona główna</li>
-          ) : (
-            <li>Strona główna</li>
-          )}
+          <li className={currentSite === "" ? styles.selected : null}>
+            {t("common:link7")}
+          </li>
         </Link>
         <Link href="./poznaj-kyambalo">
-          {currentSite === "poznaj-kyambalo" ? (
-            <li className={styles.selected}>Poznaj Kyambalo</li>
-          ) : (
-            <li>Poznaj Kyambalo</li>
-          )}
+          <li
+            className={
+              currentSite === "poznaj-kyambalo" ? styles.selected : null
+            }
+          >
+            {t("common:link1")}
+          </li>
         </Link>
         <Link href="./wspolpraca">
-          {currentSite === "wspolpraca" ? (
-            <li className={styles.selected}>Współpraca</li>
-          ) : (
-            <li>Współpraca</li>
-          )}
+          <li className={currentSite === "wspolpraca" ? styles.selected : null}>
+            {t("common:link4")}
+          </li>
         </Link>
         <Link href="./polityka-prywatnosci">
-          {currentSite === "polityka-prywatnosci" ? (
-            <li className={styles.selected}>Polityka prywatności</li>
-          ) : (
-            <li>Polityka prywatności</li>
-          )}
+          <li
+            className={
+              currentSite === "polityka-prywatnosci" ? styles.selected : null
+            }
+          >
+            {t("common:link8")}
+          </li>
         </Link>
         <Link href="./kontakt">
-          {currentSite === "kontakt" ? (
-            <li className={styles.selected}>Kontakt</li>
-          ) : (
-            <li>Kontakt</li>
-          )}
+          <li className={currentSite === "kontakt" ? styles.selected : null}>
+            {t("common:link6")}
+          </li>
         </Link>
       </ul>
     </footer>

@@ -27,7 +27,6 @@ export const getStaticProps: GetStaticProps = async (context) => {
 };
 
 export default function Home({ publicIds }) {
-  console.log("loaded");
   const { t, lang } = useTranslation();
   return (
     <>
@@ -68,7 +67,7 @@ export default function Home({ publicIds }) {
           <link rel="icon" href="/favicon.ico" />
           <link rel="canonical" href="https://kyambalo.com/" />
         </Head>
-        <Navbar currentSite="home" />
+        <Navbar currentSite="" />
         <Header files={publicIds} path="/slider-images/" />
         <main className={styles.main}>
           <Socials />
@@ -102,7 +101,7 @@ export default function Home({ publicIds }) {
           />
           <ContactForm />
         </main>
-        <Footer currentSite="home" />
+        <Footer currentSite="" />
       </div>
     </>
   );

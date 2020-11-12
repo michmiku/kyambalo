@@ -7,8 +7,11 @@ import Footer from "../../components/footer";
 import { Image } from "cloudinary-react";
 import Link from "next/link";
 import Socials from "../../components/socialMedia";
+import useTranslation from "next-translate/useTranslation";
 
 export default function Home() {
+  const { t, lang } = useTranslation();
+
   return (
     <div className={styles.container}>
       <Head>
@@ -54,7 +57,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar currentSite="architektura-wnetrz" />
-      <Header img="bg5.jpg" tytul="ARCHITEKTURA WNĘTRZ" />
+      <Header img="bg5.jpg" tytul={t("architektura-wnetrz:title")} />
       <main className={styles.main}>
         <Socials />
         <section className={styles.section}>

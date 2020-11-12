@@ -6,10 +6,15 @@ import styles from "../styles/navbar.module.scss";
 import { Image } from "cloudinary-react";
 
 const { locales } = i18nConfig;
-export default function ChangeLanguage() {
+export default function ChangeLanguage({ currentSite }) {
   return (
     <div className={styles.languageContainer}>
-      <Link href="/" locale={"pl"} key={"pl"}>
+      <Link
+        href={"/" + currentSite + ""}
+        locale={"pl"}
+        key={"pl"}
+        scroll={false}
+      >
         <div>
           <Image
             src="/pl.png"
@@ -20,7 +25,12 @@ export default function ChangeLanguage() {
           />
         </div>
       </Link>
-      <Link href="/en" locale={"en"} key={"en"}>
+      <Link
+        href={"/" + currentSite + ""}
+        locale={"en"}
+        key={"en"}
+        scroll={false}
+      >
         <div>
           <Image
             src="/gb.png"

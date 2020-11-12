@@ -5,8 +5,11 @@ import Header from "../../components/subHeader";
 import ContactForm from "../../components/contactForm";
 import Footer from "../../components/footer";
 import Socials from "../../components/socialMedia";
+import useTranslation from "next-translate/useTranslation";
 
 export default function Home({ fileNames }) {
+  const { t, lang } = useTranslation();
+
   return (
     <div className={styles.container}>
       <Head>
@@ -51,7 +54,7 @@ export default function Home({ fileNames }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar currentSite="polityka-prywatnosci" />
-      <Header img="bg1.jpg" tytul="POLITYKA PRYWATNOŚCI" />
+      <Header img="bg1.jpg" tytul={t("polityka-prywatnosci:title")} />
       <main className={styles.main}>
         <Socials />
         <section className={styles.section}>
