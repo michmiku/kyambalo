@@ -9,6 +9,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ChangeLanguage from "../components/changeLanguage";
 import useTranslation from "next-translate/useTranslation";
+import { Image } from "cloudinary-react";
 
 function Navbar({ currentSite }: any) {
   const { t, lang } = useTranslation();
@@ -47,7 +48,7 @@ function Navbar({ currentSite }: any) {
     <div className={styles.navbarContainer}>
       <div className={styles.navbar} ref={navbar}>
         <Link href="./">
-          <img src="navbar-logo.svg" />
+          <Image src="/navbar-logo.svg" alt="logo" width="auto" />
         </Link>
         <ul className={styles.navbarMenu}>
           <Link href="./poznaj-kyambalo">

@@ -9,12 +9,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+        position: absolute;
+        top: 10px;
 
         h1 {
             text-align: center;
-            margin-top: 50px;
             font-size: 2em;
             color: white;
             font-weight: normal;
