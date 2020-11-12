@@ -1,5 +1,6 @@
 import styles from "../styles/bigPicture.module.scss";
-import Image from "next/image";
+import { Image } from "cloudinary-react";
+
 import {
   faTimes,
   faChevronRight,
@@ -59,13 +60,13 @@ export default function Images({ file, alt, path, handleClick, files, id }) {
         }}
       />
       <div className={styles.imgContainer}>
+        {console.log(files[image.id])}
         <Image
-          src={path + files[image.id].fileName}
+          cloudName="kyambalo"
+          publicId={files[image.id]}
           alt={alt}
-          width={files[image.id].size.width}
-          height={files[image.id].size.height}
           key={image.id}
-          loading="eager"
+          width="auto"
         />
       </div>
     </div>

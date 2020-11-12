@@ -20,14 +20,29 @@
     user-select: none;
 
     .imgContainer {
-        width: 70vw;
-        height: 75vh;
+        width: 65vw;
         flex: 1;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         margin: 50px;
+        overflow: hidden;
+
+        &:hover {
+            background-color: rgba(122, 79, 22, 0.623);
+        }
+
+        img {
+            width: 100%;
+            -webkit-transition: all 0.2s ease-in-out;
+            -moz-transition: all 0.2s ease-in-out;
+            -ms-transition: all 0.2s ease-in-out;
+            -o-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+
+
+        }
     }
 
     .rightArrow {

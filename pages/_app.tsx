@@ -17,10 +17,10 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
         location="bottom"
         buttonText="WYRAŻAM ZGODĘ"
         cookieName="cookies"
-        style={{ background: "#2B373B", fontSize: "0.7em" }}
+        style={{ background: "#2B373B", fontSize: "0.8em" }}
         buttonStyle={{
           color: "white",
-          fontSize: "0.7em",
+          fontSize: "0.8em",
           background: "rgb(150, 97, 61)",
         }}
       >

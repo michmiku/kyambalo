@@ -12,34 +12,24 @@ import React, { useState } from "react";
 import BigPicture from "../../components/bigPicture";
 import useTranslation from "next-translate/useTranslation";
 import Trans from "next-translate/Trans";
+import { Image } from "cloudinary-react";
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  const fs = require("fs");
-  const fileNames = fs.readdirSync(
-    path.join(process.cwd(), "public/poznaj-images")
-  );
-  const sizeOf = require("image-size");
-  let files = [];
-  fileNames.map((element, key) => {
-    let dimensions = sizeOf(
-      path.join(process.cwd(), "public/poznaj-images/" + element + "")
-    );
-    files = [
-      ...files,
-      {
-        fileName: element,
-        size: { width: dimensions.width, height: dimensions.height },
-      },
-    ];
-  });
+  const { cloudinary } = require("../../utils/cloudinary");
+  const { resources } = await cloudinary.search
+    .expression("folder:poznaj-images")
+    .sort_by("public_id", "desc")
+    .max_results(100)
+    .execute();
+  const publicIds = resources.map((file) => file.public_id);
   return {
     props: {
-      files,
+      publicIds,
     },
   };
 };
 
-export default function Home({ files }) {
+export default function Home({ publicIds }) {
   const { t, lang } = useTranslation();
 
   const [bigPicture, setBigPicture] = useState({
@@ -110,7 +100,7 @@ export default function Home({ files }) {
             alt={bigPicture.alt}
             path={bigPicture.path}
             handleClick={handleClick}
-            files={files}
+            files={publicIds}
             id={bigPicture.id}
           />
         ) : null}
@@ -125,7 +115,10 @@ export default function Home({ files }) {
             <p>{t("poznaj-kyambalo:paragraf6")}</p>
             <p>{t("poznaj-kyambalo:paragraf7")}</p>
             <div className={styles.unia}>
-              <img src="unia.png" alt="unia" />
+              <Image
+                cloudName="kyambalo"
+                publicId="shared-images/unia_rtiaip"
+              />
             </div>
             <Trans
               i18nKey="poznaj-kyambalo:paragraf8"
@@ -145,9 +138,9 @@ export default function Home({ files }) {
             <p>{t("poznaj-kyambalo:paragraf11")}</p>
             <p>{t("poznaj-kyambalo:paragraf12")}</p>
             <Images
-              files={files}
+              files={publicIds}
               alt="Poznaj Kyambalo"
-              path="/poznaj-images/"
+              path="poznaj-images/"
               handleClick={handleClick}
             />
           </section>

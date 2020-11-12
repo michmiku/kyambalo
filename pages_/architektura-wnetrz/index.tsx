@@ -4,7 +4,7 @@ import Navbar from "../../components/navbar";
 import Header from "../../components/subHeader";
 import ContactForm from "../../components/contactForm";
 import Footer from "../../components/footer";
-import Image from "next/image";
+import { Image } from "cloudinary-react";
 import Link from "next/link";
 import Socials from "../../components/socialMedia";
 
@@ -83,10 +83,9 @@ export default function Home() {
           <Link href="./przykladowe-realizacje">
             <div>
               <Image
-                src="/Kyambalo-realizacje.jpg"
+                cloudName="kyambalo"
+                publicId="architektura-images/Kyambalo-realizacje_gz7rj3"
                 alt="Przykładowe realizacje"
-                width={300}
-                height={150}
               />
               <p>PRZYKŁADOWE REALIZACJE</p>
             </div>
@@ -94,10 +93,9 @@ export default function Home() {
           <Link href="./wzory-probek-materialu">
             <div>
               <Image
-                src="/kyambalo-probki-materialow.jpg"
+                cloudName="kyambalo"
+                publicId="architektura-images/kyambalo-probki-materialow_svv2je"
                 alt="Wzory próbek materiału"
-                width={300}
-                height={150}
               />
               <p>WZORY PRÓBEK MATERIAŁU</p>
             </div>

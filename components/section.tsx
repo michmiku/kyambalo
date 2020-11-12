@@ -1,6 +1,6 @@
 import styles from "../styles/Home.module.scss";
 import Link from "next/link";
-import Image from "next/image";
+import { Image } from "cloudinary-react";
 
 export default function Section({
   naglowek,
@@ -15,14 +15,7 @@ export default function Section({
       <p>{paragraf1}</p>
       {paragraf2 === "" ? null : <p>{paragraf2}</p>}
       {paragraf3 === "" ? null : <p>{paragraf3}</p>}
-      <Image
-        src={img}
-        alt={img}
-        width={4000}
-        height={2500}
-        loading="eager"
-        priority={true}
-      />
+      <Image cloudName="kyambalo" publicId={img} alt="Kyambalo material" />
       <Link href="./nasz-material">
         <div className={styles.button}>DOWIEDZ SIĘ WIĘCEJ</div>
       </Link>

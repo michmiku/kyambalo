@@ -20,8 +20,8 @@ $close-width: ($button-size / 10);
 
         .languageContainer {
             position: absolute;
-            right: 0;
-            top: 20px;
+            right: 30px;
+            top: 10px;
             z-index: 5;
             width: 60px;
             height: 20px;
@@ -35,17 +35,9 @@ $close-width: ($button-size / 10);
                 transition: all .1s linear;
 
                 &:hover {
-
                     transform: scale(1.2)
                 }
-
-                &:nth-child(1) {
-                    position: relative;
-                    right: 10px;
-                }
             }
-
-
         }
 
         img {

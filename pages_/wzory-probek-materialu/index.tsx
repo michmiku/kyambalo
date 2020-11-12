@@ -5,42 +5,28 @@ import Header from "../../components/subHeader";
 import ContactForm from "../../components/contactForm";
 import Footer from "../../components/footer";
 import { GetStaticProps } from "next";
-import path from "path";
 import Images from "../../components/images";
 import Socials from "../../components/socialMedia";
 import React, { useState } from "react";
 import BigPicture from "../../components/bigPicture";
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  const fs = require("fs");
-  const fileNames = fs.readdirSync(
-    path.join(process.cwd(), "public/wzory-probek-materialu-images")
-  );
-  const sizeOf = require("image-size");
-  let files = [];
-  fileNames.map((element, key) => {
-    let dimensions = sizeOf(
-      path.join(
-        process.cwd(),
-        "public/wzory-probek-materialu-images/" + element + ""
-      )
-    );
-    files = [
-      ...files,
-      {
-        fileName: element,
-        size: { width: dimensions.width, height: dimensions.height },
-      },
-    ];
-  });
+  const { cloudinary } = require("../../utils/cloudinary");
+  const { resources } = await cloudinary.search
+    .expression("folder:wzory-probek-materialu-images")
+    .sort_by("public_id", "desc")
+    .max_results(100)
+    .execute();
+  const publicIds = resources.map((file) => file.public_id);
+
   return {
     props: {
-      files,
+      publicIds,
     },
   };
 };
 
-export default function Home({ files }) {
+export default function Home({ publicIds }) {
   const [bigPicture, setBigPicture] = useState({
     file: "",
     alt: "",
@@ -108,7 +94,7 @@ export default function Home({ files }) {
           alt={bigPicture.alt}
           path={bigPicture.path}
           handleClick={handleClick}
-          files={files}
+          files={publicIds}
           id={bigPicture.id}
         />
       ) : null}
@@ -116,7 +102,7 @@ export default function Home({ files }) {
         <Socials />
         <section className={styles.section}>
           <Images
-            files={files}
+            files={publicIds}
             alt="Wzory próbek materiału Kyambalo"
             path="/wzory-probek-materialu-images/"
             handleClick={handleClick}

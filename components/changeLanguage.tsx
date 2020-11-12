@@ -3,7 +3,7 @@ import Link from "next/link";
 import useTranslation from "next-translate/useTranslation";
 import i18nConfig from "../i18n.json";
 import styles from "../styles/navbar.module.scss";
-import Image from "next/image";
+import { Image } from "cloudinary-react";
 
 const { locales } = i18nConfig;
 export default function ChangeLanguage() {
@@ -14,8 +14,8 @@ export default function ChangeLanguage() {
           <Image
             src="/pl.png"
             alt="Polski język"
-            width={40}
-            height={22}
+            width={20}
+            height={11}
             loading="eager"
           />
         </div>
@@ -25,8 +25,8 @@ export default function ChangeLanguage() {
           <Image
             src="/gb.png"
             alt="Angielski język"
-            width={40}
-            height={22}
+            width={20}
+            height={11}
             loading="eager"
           />
         </div>

@@ -1,6 +1,6 @@
 import styles from "../styles/Home.module.scss";
 import Carousel from "react-bootstrap/Carousel";
-import Image from "next/image";
+import { Image } from "cloudinary-react";
 
 export default function Header({ files, path }) {
   return (
@@ -8,27 +8,12 @@ export default function Header({ files, path }) {
       <Carousel>
         {files.map((file, key) => (
           <Carousel.Item key={key}>
-            <Image
-              src={path + file}
-              alt={file}
-              width={2400}
-              height={1000}
-              className={styles.img}
-              quality={100}
-              loading="eager"
-            />
+            <Image cloudName="kyambalo" publicId={file} />
           </Carousel.Item>
         ))}
       </Carousel>
       <div className={styles.logo}>
-        <Image
-          src="/Kyambalo.png"
-          alt="logo"
-          width={630}
-          height={260}
-          loading="eager"
-          priority={true}
-        />
+        <Image src="/Kyambalo.png" alt="logo" width={630} height={260} />
       </div>
     </header>
   );

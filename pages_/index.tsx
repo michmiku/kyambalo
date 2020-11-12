@@ -6,24 +6,28 @@ import ContactForm from "../components/contactForm";
 import Footer from "../components/footer";
 import Header from "../components/mainHeader";
 import { GetStaticProps } from "next";
-import path from "path";
 import Socials from "../components/socialMedia";
-import Image from "next/image";
 import useTranslation from "next-translate/useTranslation";
+import { Image } from "cloudinary-react";
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  const fs = require("fs");
-  const fileNames = fs.readdirSync(
-    path.join(process.cwd(), "public/slider-images")
-  );
+  const { cloudinary } = require("../utils/cloudinary");
+  const { resources } = await cloudinary.search
+    .expression("folder:slider-images")
+    .sort_by("public_id", "desc")
+    .max_results(100)
+    .execute();
+  const publicIds = resources.map((file) => file.public_id);
+
   return {
     props: {
-      fileNames,
+      publicIds,
     },
   };
 };
 
-export default function Home({ fileNames }) {
+export default function Home({ publicIds }) {
+  console.log("loaded");
   const { t, lang } = useTranslation();
   return (
     <>
@@ -65,17 +69,14 @@ export default function Home({ fileNames }) {
           <link rel="canonical" href="https://kyambalo.com/" />
         </Head>
         <Navbar currentSite="home" />
-        <Header files={fileNames} path="/slider-images/" />
+        <Header files={publicIds} path="/slider-images/" />
         <main className={styles.main}>
           <Socials />
           <section className={styles.unia}>
             <Image
-              src="/unia.png"
+              cloudName="kyambalo"
+              publicId="shared-images/unia_rtiaip"
               alt="unia"
-              width={1200}
-              height={80}
-              priority={true}
-              loading="eager"
             />
           </section>
           <Section
@@ -83,21 +84,21 @@ export default function Home({ fileNames }) {
             paragraf1={t("home:section1.paragraf1")}
             paragraf2={t("home:section1.paragraf2")}
             paragraf3={t("home:section1.paragraf3")}
-            img="/home-images/IMG_4945.jpg"
+            img="home-images/IMG_4945_cfmfb3"
           />
           <Section
             naglowek={t("home:section2.naglowek")}
             paragraf1={t("home:section2.paragraf1")}
             paragraf2={t("home:section2.paragraf2")}
             paragraf3={t("home:section2.paragraf3")}
-            img="/home-images/IMG_4783.jpg"
+            img="home-images/IMG_4783_mybzbr"
           />
           <Section
             naglowek={t("home:section3.naglowek")}
             paragraf1={t("home:section3.paragraf1")}
             paragraf2=""
             paragraf3=""
-            img="/home-images/MZ_043.jpg"
+            img="home-images/MZ_043_mzhoha"
           />
           <ContactForm />
         </main>
