@@ -110,6 +110,17 @@ export default function Home({ publicIds }) {
             <p>{t("poznaj-kyambalo:paragraf2")}</p>
             <p>{t("poznaj-kyambalo:paragraf3")}</p>
             <p>{t("poznaj-kyambalo:paragraf4")}</p>
+            <div className={styles.movie}>
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/yOBJT5OTs3I"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+
             <p>{t("poznaj-kyambalo:paragraf5")}</p>
             <p>{t("poznaj-kyambalo:paragraf6")}</p>
             <p>{t("poznaj-kyambalo:paragraf7")}</p>

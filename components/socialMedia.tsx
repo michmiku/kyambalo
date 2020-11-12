@@ -11,34 +11,34 @@ export default function MyComponent(): ReactElement {
   return (
     <nav className={styles.social}>
       <ul>
-        <li>
+        <li className={styles.facebook}>
           <a
             className={styles.link}
             href="https://www.facebook.com/kyambalo/"
             target="_blank"
           >
+            <FontAwesomeIcon icon={faFacebook} />
             <p>Facebook</p>
-            <FontAwesomeIcon icon={faFacebook} className={styles.facebook} />
           </a>
         </li>
-        <li>
+        <li className={styles.instagram}>
           <a
             className={styles.link}
             href="https://www.instagram.com/kyambalo_arcydzielorakludzkich/"
             target="_blank"
           >
+            <FontAwesomeIcon icon={faInstagram} />
             <p>Instagram</p>
-            <FontAwesomeIcon icon={faInstagram} className={styles.instagram} />
           </a>
         </li>
-        <li>
+        <li className={styles.youtube}>
           <a
             className={styles.link}
             href="https://www.youtube.com/channel/UCgCbq5ZGoLe0Qfearg1z4zw/"
             target="_blank"
           >
+            <FontAwesomeIcon icon={faYoutube} />
             <p>Youtube</p>
-            <FontAwesomeIcon icon={faYoutube} className={styles.youtube} />
           </a>
         </li>
       </ul>
