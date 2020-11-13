@@ -64,8 +64,8 @@ const PostPage = ({ post }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Navbar currentSite={"blog/" + post !== undefined ? post.slug : null} />
-      <Header img="bg1.jpg" tytul={post.title} />
+      <Navbar currentSite={"blog/" + (post !== undefined ? post.slug : null)} />
+      <Header img="bg1.jpg" tytul={post !== undefined ? post.title : null} />
       <main className={styles.main}>
         <Socials />
         <Link href="/blog">
