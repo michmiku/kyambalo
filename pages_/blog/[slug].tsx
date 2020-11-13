@@ -12,10 +12,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  let post = undefined;
-  if (params !== undefined) {
-    post = await getSinglePost(params.slug);
-  }
+  const post = await getSinglePost(params.slug);
 
   return {
     props: {
@@ -92,7 +89,7 @@ const PostPage = ({ post }) => {
           <ContactForm />
         </section>
       </main>
-      <Footer currentSite={"blog/" + post.slug} />
+      <Footer currentSite={"blog/" + (post !== undefined ? post.slug : null)} />
     </div>
   );
 };
