@@ -14,7 +14,7 @@ export default function Footer({ currentSite }) {
             {t("common:link7")}
           </li>
         </Link>
-        <Link href="./poznaj-kyambalo">
+        <Link href="/poznaj-kyambalo">
           <li
             className={
               currentSite === "poznaj-kyambalo" ? styles.selected : null
@@ -23,12 +23,12 @@ export default function Footer({ currentSite }) {
             {t("common:link1")}
           </li>
         </Link>
-        <Link href="./wspolpraca">
+        <Link href="/wspolpraca">
           <li className={currentSite === "wspolpraca" ? styles.selected : null}>
             {t("common:link4")}
           </li>
         </Link>
-        <Link href="./polityka-prywatnosci">
+        <Link href="/polityka-prywatnosci">
           <li
             className={
               currentSite === "polityka-prywatnosci" ? styles.selected : null
@@ -37,7 +37,12 @@ export default function Footer({ currentSite }) {
             {t("common:link8")}
           </li>
         </Link>
-        <Link href="./kontakt">
+        <Link href="/blog">
+          <li className={currentSite === "blog" ? styles.selected : null}>
+            Blog
+          </li>
+        </Link>
+        <Link href="/kontakt">
           <li className={currentSite === "kontakt" ? styles.selected : null}>
             {t("common:link6")}
           </li>

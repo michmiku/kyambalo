@@ -47,11 +47,11 @@ function Navbar({ currentSite }: any) {
   return (
     <div className={styles.navbarContainer}>
       <div className={styles.navbar} ref={navbar}>
-        <Link href="./">
+        <Link href="/">
           <Image src="/navbar-logo.svg" alt="logo" width="auto" />
         </Link>
         <ul className={styles.navbarMenu}>
-          <Link href="./poznaj-kyambalo">
+          <Link href="/poznaj-kyambalo">
             <li
               className={
                 currentSite === "poznaj-kyambalo" ? styles.selected : null
@@ -62,7 +62,7 @@ function Navbar({ currentSite }: any) {
               </span>
             </li>
           </Link>
-          <Link href="./nasz-material">
+          <Link href="/nasz-material">
             <li
               className={
                 currentSite === "nasz-material" ? styles.selected : null
@@ -73,7 +73,7 @@ function Navbar({ currentSite }: any) {
               </span>
             </li>
           </Link>
-          <Link href="./architektura-wnetrz">
+          <Link href="/architektura-wnetrz">
             <li
               className={
                 currentSite === "architektura-wnetrz" ? styles.selected : null
@@ -84,7 +84,7 @@ function Navbar({ currentSite }: any) {
               </span>
             </li>
           </Link>
-          <Link href="./wspolpraca">
+          <Link href="/wspolpraca">
             <li
               className={currentSite === "wspolpraca" ? styles.selected : null}
             >
@@ -93,14 +93,19 @@ function Navbar({ currentSite }: any) {
               </span>
             </li>
           </Link>
-          <Link href="./showroom">
+          <Link href="/showroom">
             <li className={currentSite === "showroom" ? styles.selected : null}>
               <span className={`${styles.hover} ${styles.hover3}`}>
                 {t("common:link5")}
               </span>
             </li>
           </Link>
-          <Link href="./kontakt">
+          <Link href="/blog">
+            <li className={currentSite === "blog" ? styles.selected : null}>
+              <span className={`${styles.hover} ${styles.hover3}`}>Blog</span>
+            </li>
+          </Link>
+          <Link href="/kontakt">
             <li className={currentSite === "kontakt" ? styles.selected : null}>
               <span className={`${styles.hover} ${styles.hover3}`}>
                 {t("common:link6")}
@@ -137,7 +142,7 @@ function Navbar({ currentSite }: any) {
           </a>
         </div>
         <ul>
-          <Link href="./poznaj-kyambalo">
+          <Link href="/poznaj-kyambalo">
             <li
               className={
                 currentSite === "poznaj-kyambalo" ? styles.selected : null
@@ -147,7 +152,7 @@ function Navbar({ currentSite }: any) {
               {t("common:link1")}
             </li>
           </Link>
-          <Link href="./nasz-material">
+          <Link href="/nasz-material">
             <li
               className={
                 currentSite === "nasz-material" ? styles.selected : null
@@ -157,7 +162,7 @@ function Navbar({ currentSite }: any) {
               {t("common:link2")}
             </li>
           </Link>
-          <Link href="./architektura-wnetrz">
+          <Link href="/architektura-wnetrz">
             <li
               className={
                 currentSite === "architektura-wnetrz" ? styles.selected : null
@@ -167,7 +172,7 @@ function Navbar({ currentSite }: any) {
               {t("common:link3")}
             </li>
           </Link>
-          <Link href="./wspolpraca">
+          <Link href="/wspolpraca">
             <li
               className={currentSite === "wspolpraca" ? styles.selected : null}
               onClick={() => handleMenuClick()}
@@ -175,7 +180,7 @@ function Navbar({ currentSite }: any) {
               {t("common:link4")}
             </li>
           </Link>
-          <Link href="./showroom">
+          <Link href="/showroom">
             <li
               className={currentSite === "showroom" ? styles.selected : null}
               onClick={() => handleMenuClick()}
@@ -183,7 +188,15 @@ function Navbar({ currentSite }: any) {
               {t("common:link5")}
             </li>
           </Link>
-          <Link href="./kontakt">
+          <Link href="/blog">
+            <li
+              className={currentSite === "blog" ? styles.selected : null}
+              onClick={() => handleMenuClick()}
+            >
+              Blog
+            </li>
+          </Link>
+          <Link href="/kontakt">
             <li
               className={currentSite === "kontakt" ? styles.selected : null}
               onClick={() => handleMenuClick()}

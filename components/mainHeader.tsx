@@ -8,7 +8,7 @@ export default function Header({ files, path }) {
       <Carousel>
         {files.map((file, key) => (
           <Carousel.Item key={key}>
-            <Image cloudName="kyambalo" publicId={file} />
+            <Image cloudName="kyambalo" publicId={file} alt="kyambalo" />
           </Carousel.Item>
         ))}
       </Carousel>
