@@ -12,12 +12,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  let post;
-  if (params !== undefined) {
-    post = await getSinglePost(params.slug);
-  } else {
-    post = undefined;
-  }
+  const post = await getSinglePost(params.slug);
+
   return {
     props: {
       post,
@@ -67,7 +63,8 @@ const PostPage = ({ post }) => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar currentSite={"blog/" + post.slug} />
+
+      <Navbar currentSite={"blog/" + post !== undefined ? post.slug : null} />
       <Header img="bg1.jpg" tytul={post.title} />
       <main className={styles.main}>
         <Socials />
