@@ -12,7 +12,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const post = await getSinglePost(params.slug);
+  let post;
+  if (params !== undefined) {
+    post = await getSinglePost(params.slug);
+  } else {
+    post = undefined;
+  }
   return {
     props: {
       post,
