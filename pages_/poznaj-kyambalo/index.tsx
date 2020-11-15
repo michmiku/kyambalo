@@ -17,7 +17,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const { cloudinary } = require("../../utils/cloudinary");
   const { resources } = await cloudinary.search
     .expression("folder:poznaj-images")
-    .sort_by("public_id", "desc")
+    .sort_by("public_id", "asc")
     .max_results(100)
     .execute();
   const publicIds = resources.map((file) => file.public_id);
@@ -92,7 +92,7 @@ export default function Home({ publicIds }) {
           <meta name="twitter:image" content="/unia.png" />
         </Head>
         <Navbar currentSite="poznaj-kyambalo" />
-        <Header img="bg1.jpg" tytul={t("poznaj-kyambalo:title")} />
+        <Header img="bg1_v3asut" tytul={t("poznaj-kyambalo:title")} />
         {bigPicture.state ? (
           <BigPicture
             file={bigPicture.file}

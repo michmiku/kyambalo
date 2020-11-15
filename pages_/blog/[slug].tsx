@@ -10,6 +10,7 @@ import ContactForm from "../../components/contactForm";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
+import { Image } from "cloudinary-react";
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const post = await getSinglePost(params.slug);
@@ -65,7 +66,7 @@ const PostPage = ({ post }) => {
       </Head>
 
       <Navbar currentSite={"blog/" + (post !== undefined ? post.slug : null)} />
-      <Header img="bg1.jpg" tytul={post !== undefined ? post.title : null} />
+      <Header img="bg3_rpjo4a" tytul={post !== undefined ? post.title : null} />
       <main className={styles.main}>
         <Socials />
         <Link href="/blog">
@@ -81,6 +82,39 @@ const PostPage = ({ post }) => {
         <section className={styles.post}>
           {post !== undefined ? (
             <div>
+              <header className={styles.header}>
+                <p>{post.primary_tag.name}</p>
+                <h2>
+                  <b>{post.title}</b>
+                </h2>
+                <section>
+                  <p>{post.excerpt}</p>
+                </section>
+              </header>
+              <hr />
+
+              <footer>
+                <div className={styles.authorImage}>
+                  <Image
+                    src={post.primary_author.profile_image}
+                    alt={post.primary_author.name}
+                  />
+                </div>
+                <div className={styles.content}>
+                  <span className={styles.author}>
+                    <p>{post.primary_author.name}</p>
+                  </span>
+                  <span className={styles.time}>
+                    <time dateTime={post.published_at.slice(0, 10)}>
+                      {post.published_at.slice(0, 10)}
+                    </time>
+                    <span> • {post.reading_time} min read</span>
+                  </span>
+                </div>
+              </footer>
+              <section className={styles.imageContainer}>
+                <Image src={post.feature_image} alt={post.title} />
+              </section>
               <div dangerouslySetInnerHTML={{ __html: post.html }} />
             </div>
           ) : null}

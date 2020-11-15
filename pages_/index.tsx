@@ -14,7 +14,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const { cloudinary } = require("../utils/cloudinary");
   const { resources } = await cloudinary.search
     .expression("folder:slider-images")
-    .sort_by("public_id", "desc")
+    .sort_by("public_id", "asc")
     .max_results(100)
     .execute();
   const publicIds = resources.map((file) => file.public_id);

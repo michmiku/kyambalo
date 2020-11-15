@@ -15,7 +15,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const { cloudinary } = require("../../utils/cloudinary");
   const { resources } = await cloudinary.search
     .expression("folder:wspolpraca-images")
-    .sort_by("public_id", "desc")
+    .sort_by("public_id", "asc")
     .max_results(100)
     .execute();
   const publicIds = resources.map((file) => file.public_id);
@@ -86,7 +86,7 @@ export default function Home({ publicIds }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar currentSite="wspolpraca" />
-      <Header img="bg7.jpg" tytul={t("wspolpraca:title")} />
+      <Header img="bg7_rt555w" tytul={t("wspolpraca:title")} />
       {bigPicture.state ? (
         <BigPicture
           file={bigPicture.file}

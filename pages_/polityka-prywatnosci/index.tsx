@@ -54,7 +54,7 @@ export default function Home({ fileNames }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar currentSite="polityka-prywatnosci" />
-      <Header img="bg1.jpg" tytul={t("polityka-prywatnosci:title")} />
+      <Header img="bg1_v3asut" tytul={t("polityka-prywatnosci:title")} />
       <main className={styles.main}>
         <Socials />
         <section className={styles.section}>

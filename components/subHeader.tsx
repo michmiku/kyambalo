@@ -4,7 +4,13 @@ import { Image } from "cloudinary-react";
 export default function Header({ img, tytul }) {
   return (
     <header className={styles.header}>
-      <Image src={"/background-images/" + img} alt="background" width="auto" />
+      <Image
+        cloudName="kyambalo"
+        publicId={"background-images/" + img}
+        alt="Kyambalo background"
+        width="auto"
+        preload="true"
+      />
       <div className={styles.img}>
         <h1>{tytul}</h1>
       </div>

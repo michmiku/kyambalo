@@ -57,7 +57,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar currentSite="architektura-wnetrz" />
-      <Header img="bg5.jpg" tytul={t("architektura-wnetrz:title")} />
+      <Header img="bg5_lcnxaw" tytul={t("architektura-wnetrz:title")} />
       <main className={styles.main}>
         <Socials />
         <section className={styles.section}>
