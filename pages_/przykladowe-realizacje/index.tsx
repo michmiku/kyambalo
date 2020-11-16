@@ -91,7 +91,7 @@ export default function Home({ publicIds }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar currentSite="przykladowe-realizacje" />
-      <Header img="bg1_v3asut" tytul={t("przykladowe-realizacje:title")} />
+      <Header img="bg10_h1arad" tytul={t("przykladowe-realizacje:title")} />
       {bigPicture.state ? (
         <BigPicture
           file={bigPicture.file}

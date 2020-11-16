@@ -66,7 +66,7 @@ const PostPage = ({ post }) => {
       </Head>
 
       <Navbar currentSite={"blog/" + (post !== undefined ? post.slug : null)} />
-      <Header img="bg3_rpjo4a" tytul={post !== undefined ? post.title : null} />
+      <Header img="bg9_ykc40t" tytul={post !== undefined ? post.title : null} />
       <main className={styles.main}>
         <Socials />
         <Link href="/blog">

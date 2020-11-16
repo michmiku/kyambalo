@@ -191,7 +191,7 @@ $close-width: ($button-size / 10);
 
             .selected {
                 .hover {
-                    color: #b4a499;
+                    color: #c2a898;
 
                     &:before,
                     &:after {
@@ -204,7 +204,7 @@ $close-width: ($button-size / 10);
                         transition: $animate;
                         transition-duration: 0.3s;
                         opacity: 0;
-                        background-color: #b4a499;
+                        background-color: #c2a898;
                     }
 
                     &.hover3 {

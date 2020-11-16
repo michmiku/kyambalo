@@ -47,7 +47,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar currentSite="kontakt" />
-      <Header img="bg2_ypr9d4" tytul={t("kontakt:title")} />
+      <Header img="bg8_rs3k24" tytul={t("kontakt:title")} />
       <main className={styles.main}>
         <Socials />
         <section className={styles.section}>

@@ -63,7 +63,7 @@ const Blog: React.FC<{ posts: any }> = ({ posts }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar currentSite="blog" />
-      <Header img="bg5_lcnxaw" tytul="BLOG" />
+      <Header img="bg4_vupemt" tytul="BLOG" />
       <main className={styles.main}>
         <Socials />
         <section className={styles.post}>
