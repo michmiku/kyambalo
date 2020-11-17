@@ -1,7 +1,7 @@
 import { ReactElement } from "react";
 import styles from "../styles/socials.module.scss";
 import {
-  faFacebook,
+  faFacebookF,
   faInstagram,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
@@ -17,7 +17,7 @@ export default function MyComponent(): ReactElement {
             href="https://www.facebook.com/kyambalo/"
             target="_blank"
           >
-            <FontAwesomeIcon icon={faFacebook} />
+            <FontAwesomeIcon icon={faFacebookF} />
             <p>Facebook</p>
           </a>
         </li>

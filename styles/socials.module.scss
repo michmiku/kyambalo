@@ -6,26 +6,26 @@
 
     ul {
         padding: 0px;
-        -webkit-transform: translate(250px, 0);
-        -moz-transform: translate(250px, 0);
-        -ms-transform: translate(250px, 0);
-        -o-transform: translate(250px, 0);
-        transform: translate(250px, 0);
+        -webkit-transform: translate(260px, 0);
+        -moz-transform: translate(260px, 0);
+        -ms-transform: translate(260px, 0);
+        -o-transform: translate(260px, 0);
+        transform: translate(260px, 0);
 
         li {
             display: block;
-            margin: 5px;
+            margin: 2px;
             width: 300px;
             text-align: left;
             padding: 10px;
             -webkit-border-radius: 15px 0 0 15px;
             -moz-border-radius: 15px 0 0 15px;
             border-radius: 15px 0 0 15px;
-            -webkit-transition: all .8s;
-            -moz-transition: all .8s;
-            -ms-transition: all .8s;
-            -o-transition: all .8s;
-            transition: all .8s;
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            -ms-transition: all .5s;
+            -o-transition: all .5s;
+            transition: all .5s;
             cursor: pointer;
 
             &.facebook {
@@ -45,23 +45,20 @@
                 color: white;
 
                 svg {
-                    font-size: 2em;
+                    position: relative;
+                    left: 5px;
+                    font-size: 1em;
                     color: white;
-                    margin-right: 17px;
+                    margin-right: 25px;
                 }
-            }
 
-
-
-
-
-
-
-            p {
-                position: relative;
-                margin-right: 10px;
-                display: inline;
-                bottom: 5px;
+                p {
+                    font-size: 0.8em;
+                    position: relative;
+                    margin-right: 10px;
+                    display: inline;
+                    bottom: 2px;
+                }
             }
 
             &:hover {
