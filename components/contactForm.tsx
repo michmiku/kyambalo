@@ -25,7 +25,7 @@ export default function ContactUs() {
   return (
     <section className={styles.contactFormContainer}>
       <div className={styles.info}>
-        <p>Chcesz dowiedzieć się czegoś więcej na temat marki Kyambalo?</p>
+        <p>Chcesz dowiedzieć się czegoś więcej o materiale Kyambalo?</p>
         <p>Skontaktuj się z nami.</p>
         <a href="tel:608382988">+48 608 382 988</a>
         <br />
