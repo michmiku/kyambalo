@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { AppProps } from "next/app";
-import "../styles/globals.css";
+import "../styles/globals.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Head from "next/head";
 import CookieConsent from "react-cookie-consent";

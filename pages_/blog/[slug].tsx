@@ -11,6 +11,7 @@ import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { Image } from "cloudinary-react";
+import React, { useEffect } from "react";
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const post = await getSinglePost(params.slug);
@@ -29,6 +30,17 @@ export const getStaticPaths = () => {
   };
 };
 const PostPage = ({ post }) => {
+  useEffect(() => {
+    (window as any).disqus_config = function () {
+      this.page.url = window.location.href;
+      this.page.identifier = post.slug;
+    };
+
+    const script = document.createElement("script");
+    script.src = "https://kyambalo.disqus.com/embed.js";
+    script.setAttribute("data-timestamp", Date.now().toString());
+    console.log(document.body.appendChild(script));
+  });
   return (
     <div className={styles.container}>
       <Head>
@@ -118,6 +130,9 @@ const PostPage = ({ post }) => {
               <div dangerouslySetInnerHTML={{ __html: post.html }} />
             </div>
           ) : null}
+        </section>
+        <section className={styles.disqus}>
+          <div id="disqus_thread"></div>
         </section>
         <section className={styles.section}>
           <ContactForm />

@@ -17,6 +17,12 @@
     background-color: rgb(241, 241, 241);
     transition: all .1s linear;
 
+    .disqus {
+        width: 100%;
+        height: auto;
+        padding: 20px 5px;
+    }
+
     .arrowContainer {
         position: absolute;
         left: 10px;
@@ -60,6 +66,7 @@
         margin-top: 0;
         background-color: rgb(241, 241, 241);
         width: 100vw;
+
 
         div {
             transition: all .1s linear;
@@ -189,6 +196,12 @@
 
         }
 
+        .disqus {
+            width: 100%;
+            height: auto;
+            padding: 20px
+        }
+
         .post {
             div {
                 padding: 20px 150px;
@@ -252,6 +265,12 @@
             top: 190px;
         }
 
+        .disqus {
+            width: 100%;
+            height: auto;
+            padding: 20px 170px;
+        }
+
         .post {
             div {
                 padding: 30px 270px;
@@ -287,6 +306,12 @@
         .arrowContainer {
             left: 300px;
             top: 190px;
+        }
+
+        .disqus {
+            width: 100%;
+            height: auto;
+            padding: 20px 350px;
         }
 
         .post {
