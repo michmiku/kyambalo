@@ -61,26 +61,10 @@ export default function Home() {
       <main className={styles.main}>
         <Socials />
         <section className={styles.section}>
-          <p>
-            Z materiału wytwarzamy wyjątkowe i niepowtarzalne pokrycia ścienne
-            takie jak tapety, panele, okleiny do mebli i drzwi, a także elementy
-            dekoracyjne wnętrz, które doskonale znajdują zastosowanie w małych
-            mieszkaniach, domach jednorodzinnych oraz przestrzeniach biurowych i
-            miejscach użyteczności publicznej.
-          </p>
-          <p>
-            Nasza firma zapewnia również kompleksową obsługę
-            architektoniczno-wykonawczą, czyli od przygotowania projektu po
-            realizację oraz montaż. Wszystkie projekty tworzymy przy współpracy
-            z architektami oraz dekoratorami wnętrz, jeśli jednak masz swój
-            własny oryginalny pomysł na aranżację, podziel się nim z nami, a my
-            go dla Ciebie stworzymy !
-          </p>
-          <p>
-            Przykładowe realizacje można już oglądać w naszym showroom’ie przy
-            ul.Zawiłej 69.
-          </p>
-          <p>Serdecznie zapraszamy !</p>
+          <p>{t("architektura-wnetrz:paragraf1")}</p>
+          <p>{t("architektura-wnetrz:paragraf2")}</p>
+          <p>{t("architektura-wnetrz:paragraf3")}</p>
+          <p>{t("architektura-wnetrz:paragraf4")}</p>
         </section>
         <section className={styles.imgContainer}>
           <Link href="./przykladowe-realizacje">
@@ -90,7 +74,7 @@ export default function Home() {
                 publicId="architektura-images/Kyambalo-realizacje_gz7rj3"
                 alt="Przykładowe realizacje"
               />
-              <p>PRZYKŁADOWE REALIZACJE</p>
+              <p>{t("architektura-wnetrz:link1")}</p>
             </div>
           </Link>
           <Link href="./wzory-probek-materialu">
@@ -100,7 +84,7 @@ export default function Home() {
                 publicId="architektura-images/kyambalo-probki-materialow_svv2je"
                 alt="Wzory próbek materiału"
               />
-              <p>WZORY PRÓBEK MATERIAŁU</p>
+              <p>{t("architektura-wnetrz:link2")}</p>
             </div>
           </Link>
         </section>

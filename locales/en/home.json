@@ -1,19 +1,19 @@
 {
-    "section1":{
-        "naglowek":"Kyambalo – a masterpiece of human hands",
-        "paragraf1":"KYAMBALO – w narzeczu jednego z plemion “szata”, “odzienie”.",
-        "paragraf2":"Produkt będący 600 letnim dziedzictwem plemienia Baganda. Wytwarzany ręcznie przez ugandyjskich farmerów w tradycyjny, niezmieniony przez wieki sposób poprzez pozyskanie odnawialnych płatów kory drzew należących do rodziny Moraceae (m.in. Ficus natalensis)",
-        "paragraf3":"Arcydzieło ludzkich rąk, materiał w pełni naturalny i w 100 % ekologiczny, zawierający wyłącznie włókna roślinne. Pozyskiwany bez degradacji przyrodniczych zasobów oraz bez dodawania lub powstawania jakichkolwiek szkodliwych substancji. Idealnie spełniający postulaty tak ważnego w globalnym ujęciu trendu zrównoważonego rozwoju."
+    "section1": {
+        "naglowek": "Kyambalo - the masterpiece of human hands",
+        "paragraf1": "Kyambalo - „robe” or „clothing” in one of the local dialects.",
+        "paragraf2": "A product that is a 600 years old heritage of Baganda tribe. Handmade by Ugandan farmers in traditional, unchanged over the centuries way by acquiring renewable lobes of bark of the tress belonging to the family Moraceae (i.a. Ficus natalensis).",
+        "paragraf3": "Masterpiece of human hands, fully natural and 100% ecological fabric consisting of only cellulose fibres. It’s acquired without degrading the natural resources and adding or forming harmful substances. Perfectly fulfils the postulates of sustainable development trend, which is very important in the global perspective."
     },
-    "section2":{
-        "naglowek":"Wyjątkowy materiał z wyjątkowego miejsca",
-        "paragraf1":"Kyambalo składa się wyłącznie z włókien celulozy, które w efekcie długotrwałej i żmudnej obróbki tworzą jedyną w swoim rodzaju siatkę ułożonych w nieregularny sposób nici.",
-        "paragraf2":"W końcowej fazie produkcji układają się one w unikalną oraz niepowtarzalną strukturę.",
-        "paragraf3":"Proces powstawania materiału jest skomplikowany i bardzo czasochłonny. Wytwarzany jest w tradycyjny sposób, poprzez usuwanie płatów wewnętrznej kory drzewa figowego. Jest ona pozyskiwana bez uszkodzenia rdzenia drzewa. Dodatkowo, w celu zabezpieczenia pnia, jest on owijany liśćmi bananowca, które chronią go przed wysuszeniem zapewniając mu jednocześnie odpowiednią ilość wilgoci."
+    "section2": {
+        "naglowek": "Exceptional fabric from exceptional place",
+        "paragraf1": "Kyambalo consists of cellulose fibres, which after a long processing and laborious treatment create a one-of-a-kind net laid out with threads that form an irregular, exceptional pattern.",
+        "paragraf2": "The final effect is a unique and special structure.",
+        "paragraf3": "The process of making the fabric is complex and very time-consuming. It’s made in a traditional way by peeling off the inner bark layers of the fig trees, which is obtained without hurting the core of the tree. To secure it properly, it’s wrapped up in banana leaves to protect it from drying out and simultaneously allow a decent amount of humidity in for the tree to start regenerating."
     },
-    "section3":{
-        "naglowek":"Niespotykana architektura wnętrz",
-        "paragraf1":"Materiał Kyambalo ze względu na liczne możliwości użytkowe doskonale sprawdza się jako element wystroju i dekoracji wnętrz. Wytwarzamy z niego wyjątkowe i niepowtarzalne pokrycia ścienne takie jak tapety, panele, oleiny do mebli i drzwi, a także elementy dekoracyjne wnętrz, które doskonale znajdują zastosowanie w małych mieszkaniach, domach jednorodzinnych oraz przestrzeniach biurowych i miejscach użyteczności publicznej."
-    }
-    
+    "section3": {
+        "naglowek": "Unparalleled interior design ",
+        "paragraf1": "Because of its usability Kyambalo fabric works great as an element of décor and interior decoration. Using this special fabric, we create unique and special wall coverings like wallpapers, panels, veneers for furniture and doors, interior decorative elements, which works perfect with small apartments, single-family houses, office spaces and public places."
+    },
+    "button": "LEARN MORE"
 }

@@ -100,28 +100,17 @@ export default function Home({ publicIds }) {
       <main className={styles.main}>
         <Socials />
         <section className={styles.section}>
-          <p>
-            Podoba Ci się nasza idea? Być może materiał Kyambalo oczarował Cię
-            na tyle, że widzisz w nim dla siebie ciekawe wyzwanie? Jeżeli tak,
-            to dołącz do nas! Jeśli jesteś:
-          </p>
+          <p>{t("wspolpraca:paragraf1")}</p>
           <ul>
-            <li>Architektem</li>
-            <li>Dekoratorem wnętrz</li>
-            <li>Twórcą galanterii</li>
-            <li>Projektantem mody</li>
-            <li>Producentem mebli</li>
-            <li>Producentem mebli tapicerskich</li>
+            <li>{t("wspolpraca:li1")}</li>
+            <li>{t("wspolpraca:li2")}</li>
+            <li>{t("wspolpraca:li3")}</li>
+            <li>{t("wspolpraca:li4")}</li>
+            <li>{t("wspolpraca:li5")}</li>
+            <li>{t("wspolpraca:li6")}</li>
           </ul>
-          <p>
-            Jeśli masz ciekawy pomysł jak wykorzystać nasz materiał w swoim
-            projekcie, zdradź go nam! Zapraszamy do kontaktu osoby z pasją,
-            które są otwarte na innowację i ciekawą współpracę.
-          </p>
-          <p>
-            Poniżej prezentujemy przykłady zastosowania materiału w różnych
-            dziedzinach.
-          </p>
+          <p>{t("wspolpraca:paragraf2")}</p>
+          <p>{t("wspolpraca:paragraf3")}</p>
           <Images
             files={publicIds}
             alt="Współpraca z Kyambalo"
