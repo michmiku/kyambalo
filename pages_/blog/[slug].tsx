@@ -96,9 +96,9 @@ const PostPage = ({ post }) => {
             <div>
               <header className={styles.header}>
                 <p>{post.primary_tag.name}</p>
-                <h2>
+                <h1>
                   <b>{post.title}</b>
-                </h2>
+                </h1>
                 <section>
                   <p>{post.excerpt}</p>
                 </section>
