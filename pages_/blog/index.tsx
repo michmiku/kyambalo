@@ -18,10 +18,10 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const posts = await getPosts();
 
   return {
+    revalidate: 10,
     props: {
       posts,
     },
-    revalidate: 10,
   };
 };
 const Blog: React.FC<{ posts: any }> = ({ posts }) => {
