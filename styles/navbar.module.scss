@@ -629,8 +629,9 @@ $close-width: ($button-size / 10);
                 display: inline;
             }
 
-            img {
-
+            img:first-child {
+                position: relative;
+                right: 30px;
                 margin-top: 10px;
                 grid-column: 2/7;
             }
