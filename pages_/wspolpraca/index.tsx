@@ -74,6 +74,11 @@ export default function Home({ publicIds }) {
           content="Jeśli masz ciekawy pomysł jak wykorzystać nasz materiał w swoim projekcie, zdradź go nam! Zapraszamy osoby z pasją, które są otware na ciekawą współpracę."
         />
         <meta property="og:url" content="https://kyambalo.com/wspolpraca/" />
+        <meta
+          property="og:image"
+          content="https://res.cloudinary.com/kyambalo/image/upload/v1/slider-images/1_z3wrpr"
+          key="ogimage"
+        />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:description"

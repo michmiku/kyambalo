@@ -72,6 +72,11 @@ export default function Home({ publicIds }) {
           content="Zdjęcia nwowo wykonanego showroomu, który prezentuje przykładowe pozycję wykonane z naszej kory."
         />
         <meta property="og:url" content="https://kyambalo.com/showroom/" />
+        <meta
+          property="og:image"
+          content="https://res.cloudinary.com/kyambalo/image/upload/v1/slider-images/1_z3wrpr"
+          key="ogimage"
+        />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:description"

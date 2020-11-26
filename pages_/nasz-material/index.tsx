@@ -71,6 +71,11 @@ export default function Home({ publicIds }) {
           content="Kyambalo oprócz swej wyjątkowości wynikającej z historii i procesu pozyskiwania, zachwyca swoją estetyką oraz niepowtarzalnością."
         />
         <meta property="og:url" content="https://kyambalo.com/nasz-material/" />
+        <meta
+          property="og:image"
+          content="https://res.cloudinary.com/kyambalo/image/upload/v1/slider-images/1_z3wrpr"
+          key="ogimage"
+        />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:description"

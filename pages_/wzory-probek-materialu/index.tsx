@@ -78,6 +78,11 @@ export default function Home({ publicIds }) {
           property="og:url"
           content="https://kyambalo.com/wzory-probek-materialu/"
         />
+        <meta
+          property="og:image"
+          content="https://res.cloudinary.com/kyambalo/image/upload/v1/slider-images/1_z3wrpr"
+          key="ogimage"
+        />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:description"

@@ -35,6 +35,11 @@ export default function Home() {
           content="Chcesz dowiedzieć się czegoś więcej na temat marki Kyambalo? Zapraszamy do kontaktu z nami i naszego showroomu w Krakowie przy ul. Zawiłej 69."
         />
         <meta property="og:url" content="https://kyambalo.com/kontakt/" />
+        <meta
+          property="og:image"
+          content="https://res.cloudinary.com/kyambalo/image/upload/v1/slider-images/1_z3wrpr"
+          key="ogimage"
+        />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:description"

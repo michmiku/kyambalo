@@ -52,7 +52,12 @@ const PostPage = ({ post }) => {
           name="robots"
           content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
         />
-        <link rel="canonical" href="https://kyambalo.com/blog/" />
+        <link
+          rel="canonical"
+          href={`https://kyambalo.com/blog/${
+            post !== undefined ? post.title : "post"
+          }`}
+        />
         <meta property="og:locale" content="pl_PL" />
         <meta property="og:type" content="blog" />
         <meta
@@ -63,10 +68,19 @@ const PostPage = ({ post }) => {
           property="og:description"
           content="Chcesz dowiedzieć się czegoś więcej o naszym materiale i Ugandzie? zapraszam na naszego bloga!"
         />
-        <meta property="og:url" content="https://kyambalo.com/blog/" />
+        <meta
+          property="og:url"
+          content={`https://kyambalo.com/blog/${
+            post !== undefined ? post.title : "post"
+          }`}
+        />
         <meta
           property="og:image"
-          content={post !== undefined ? post.feature_image : null}
+          content={
+            post !== undefined
+              ? post.feature_image
+              : "https://res-5.cloudinary.com/hai1uwfgg/image/upload/q_auto/v1/ghost-blog-images/Blog-1.jpg"
+          }
           key="ogimage"
         />
         <meta name="twitter:card" content="summary_large_image" />
