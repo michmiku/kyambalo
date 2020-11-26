@@ -39,7 +39,6 @@ const PostPage = ({ post }) => {
     const script = document.createElement("script");
     script.src = "https://kyambalo.disqus.com/embed.js";
     script.setAttribute("data-timestamp", Date.now().toString());
-    console.log(document.body.appendChild(script));
   });
   return (
     <div className={styles.container}>
@@ -101,6 +100,9 @@ const PostPage = ({ post }) => {
                 </h1>
                 <section>
                   <p>{post.excerpt}</p>
+                  <section className={styles.imageContainer}>
+                    <Image src={post.feature_image} alt={post.title} />
+                  </section>
                 </section>
               </header>
               <hr />
@@ -124,9 +126,7 @@ const PostPage = ({ post }) => {
                   </span>
                 </div>
               </footer>
-              <section className={styles.imageContainer}>
-                <Image src={post.feature_image} alt={post.title} />
-              </section>
+
               <div dangerouslySetInnerHTML={{ __html: post.html }} />
             </div>
           ) : null}
