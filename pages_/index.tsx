@@ -37,6 +37,10 @@ export default function Home({ publicIds }) {
             drzew
           </title>
           <meta
+            name="google-site-verification"
+            content="4zYUl9Ivkhq1MmwsD7hI2SD2lGps85uKv_ttL24NNRY"
+          />
+          <meta
             name="description"
             content="Kyambalo to w 100% naturalny materiał powstały w wyniku przetwarzania zewnętrznej kory drzewa Mutuba. Poznaj nasze materiały i produkty. Zapraszamy."
           ></meta>
