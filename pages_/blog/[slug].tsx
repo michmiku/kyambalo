@@ -63,15 +63,12 @@ const PostPage = ({ post }) => {
           property="og:description"
           content="Chcesz dowiedzieć się czegoś więcej o naszym materiale i Ugandzie? zapraszam na naszego bloga!"
         />
-        {console.log(post.feature_image)}
         <meta property="og:url" content="https://kyambalo.com/blog/" />
-        {post !== undefined ? (
-          <meta
-            property="og:image"
-            content={post.feature_image}
-            key="ogimage"
-          />
-        ) : null}
+        <meta
+          property="og:image"
+          content={post !== undefined ? post.feature_image : null}
+          key="ogimage"
+        />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:description"
