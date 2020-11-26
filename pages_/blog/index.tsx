@@ -51,6 +51,11 @@ const Blog: React.FC<{ posts: any }> = ({ posts }) => {
           content="Chcesz dowiedzieć się czegoś więcej o naszym materiale i Ugandzie? zapraszam na naszego bloga!"
         />
         <meta property="og:url" content="https://kyambalo.com/blog/" />
+        <meta
+          property="og:image"
+          content="https://res-5.cloudinary.com/hai1uwfgg/image/upload/q_auto/v1/ghost-blog-images/Blog-1.jpg"
+          key="ogimage"
+        />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:description"
