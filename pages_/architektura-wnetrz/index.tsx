@@ -45,6 +45,11 @@ export default function Home() {
           property="og:url"
           content="https://kyambalo.com/architektura-wnetrz/"
         />
+        <meta
+          property="og:image"
+          content="https://res.cloudinary.com/kyambalo/image/upload/v1/slider-images/6_dtstky"
+          key="ogimage"
+        />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:description"
