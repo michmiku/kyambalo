@@ -38,7 +38,7 @@ export default function Home({ publicIds }) {
           </title>
           <meta
             name="google-site-verification"
-            content="4zYUl9Ivkhq1MmwsD7hI2SD2lGps85uKv_ttL24NNRY"
+            content="Bz2pmGMO_nr7ThiH5uz7ZvdN8XCHwO_vzw8oPxA9PAE"
           />
           <meta
             name="description"
