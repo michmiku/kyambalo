@@ -57,7 +57,7 @@ export default function Home({ publicIds }) {
           <meta property="og:url" content="https://kyambalo.com/" />
           <meta
             property="og:image"
-            content="https://res.cloudinary.com/kyambalo/image/upload/v1/slider-images/1_z3wrpr"
+            content="https://res.cloudinary.com/kyambalo/image/upload/v1/slider-images/6_dtstky"
             key="ogimage"
           />
           <meta name="twitter:card" content="summary_large_image" />
