@@ -153,10 +153,10 @@ const PostPage = ({ post }) => {
           ) : null}
         </section>
         <section className={styles.disqus}>
-          <Disqus post={post} />
+          {post !== undefined ? <Disqus post={post} /> : null}
         </section>
         <section className={styles.section}>
-          {post !== undefined ? <ContactForm /> : null}
+          <ContactForm />
         </section>
       </main>
       <Footer currentSite={"blog/" + (post !== undefined ? post.slug : null)} />
