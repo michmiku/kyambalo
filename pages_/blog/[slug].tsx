@@ -14,7 +14,7 @@ import { Image } from "cloudinary-react";
 import React, { useEffect } from "react";
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const post = await getSinglePost(params.slug);
+  const post = await getSinglePost(params.slug.toLowerCase());
 
   return {
     props: {
@@ -32,7 +32,7 @@ export const getStaticPaths = () => {
 const PostPage = ({ post }) => {
   useEffect(() => {
     (window as any).disqus_config = function () {
-      this.page.url = window.location.href.toLocaleLowerCase();
+      this.page.url = window.location.href;
       this.page.identifier = post.slug;
     };
 
