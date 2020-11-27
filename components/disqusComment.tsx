@@ -2,7 +2,7 @@ import { DiscussionEmbed } from "disqus-react";
 const DisqusComments = ({ post }) => {
   const disqusShortname = "kyambalo";
   const disqusConfig = {
-    url: `https://kyambalo.com/blog${post.slug}`,
+    url: `https://kyambalo.com/blog/${post !== undefined ? post.slug : null}`,
     identifier: post.slug, // Single post id
     title: post.slug, // Single post title
   };
