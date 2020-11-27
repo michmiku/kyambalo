@@ -10,6 +10,7 @@ export default function Header({ img, tytul }) {
         alt="Kyambalo background"
         width="auto"
         preload="true"
+        secure={true}
       />
       <div className={styles.img}>
         <h1>{tytul}</h1>

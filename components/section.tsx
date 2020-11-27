@@ -18,7 +18,12 @@ export default function Section({
       <p>{paragraf1}</p>
       {paragraf2 === "" ? null : <p>{paragraf2}</p>}
       {paragraf3 === "" ? null : <p>{paragraf3}</p>}
-      <Image cloudName="kyambalo" publicId={img} alt="Kyambalo material" />
+      <Image
+        cloudName="kyambalo"
+        publicId={img}
+        alt="Kyambalo material"
+        secure={true}
+      />
       <Link href="./nasz-material">
         <div className={styles.button}>{t("home:button")}</div>
       </Link>

@@ -85,6 +85,7 @@ export default function Home({ publicIds }) {
               cloudName="kyambalo"
               publicId="shared-images/unia_rtiaip"
               alt="unia"
+              secure={true}
             />
           </section>
           <Section

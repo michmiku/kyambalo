@@ -18,6 +18,7 @@ export default function Images({ files, alt, path, handleClick }) {
             gravity="center"
             width={400}
             height={330}
+            secure={true}
           />
         </div>
       ))}

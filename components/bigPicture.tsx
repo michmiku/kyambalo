@@ -67,6 +67,7 @@ export default function Images({ file, alt, path, handleClick, files, id }) {
           alt={alt}
           key={image.id}
           width="auto"
+          secure={true}
         />
       </div>
     </div>

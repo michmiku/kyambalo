@@ -9,12 +9,23 @@ export default function Header({ files, path }) {
         {files.map((file, key) => (
           <Carousel.Item key={key}>
             {console.log(file)}
-            <Image cloudName="kyambalo" publicId={file} alt="kyambalo" />
+            <Image
+              cloudName="kyambalo"
+              publicId={file}
+              alt="kyambalo"
+              secure={true}
+            />
           </Carousel.Item>
         ))}
       </Carousel>
       <div className={styles.logo}>
-        <Image src="/Kyambalo.png" alt="logo" width={630} height={260} />
+        <Image
+          src="/Kyambalo.png"
+          alt="logo"
+          width={630}
+          height={260}
+          secure={true}
+        />
       </div>
     </header>
   );

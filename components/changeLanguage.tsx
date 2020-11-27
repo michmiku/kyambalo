@@ -22,6 +22,7 @@ export default function ChangeLanguage({ currentSite }) {
             width={20}
             height={11}
             loading="eager"
+            secure={true}
           />
         </div>
       </Link>
@@ -38,6 +39,7 @@ export default function ChangeLanguage({ currentSite }) {
             width={20}
             height={11}
             loading="eager"
+            secure={true}
           />
         </div>
       </Link>
