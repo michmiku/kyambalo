@@ -5,7 +5,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Head from "next/head";
 import CookieConsent from "react-cookie-consent";
 import Link from "next/link";
+import Router from "next/router";
+import * as gtag from "../lib/gtag";
 
+Router.events.on("routeChangeComplete", (url) => gtag.pageview(url));
 const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
   <Head>
     <meta name="viewport" content="viewport-fit=cover" />
