@@ -8,7 +8,6 @@ export default function Header({ files, path }) {
       <Carousel>
         {files.map((file, key) => (
           <Carousel.Item key={key}>
-            {console.log(file)}
             <Image
               cloudName="kyambalo"
               publicId={file}
