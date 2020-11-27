@@ -41,7 +41,7 @@ const Blog: React.FC<{ posts: any }> = ({ posts }) => {
         />
         <link rel="canonical" href="https://kyambalo.com/blog/" />
         <meta property="og:locale" content="pl_PL" />
-        <meta property="og:type" content="blog" />
+        <meta property="og:type" content="website" />
         <meta
           property="og:title"
           content="Blog Kyambalo - produkty z kory afrykańskich drzew"

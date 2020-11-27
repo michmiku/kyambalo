@@ -72,7 +72,7 @@ const PostPage = ({ post }) => {
           property="og:url"
           content={`https://kyambalo.com/blog/${
             post !== undefined ? post.title : "prolog"
-          }`}
+          }/`}
         />
         <meta
           property="og:image"
