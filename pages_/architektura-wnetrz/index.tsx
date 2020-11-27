@@ -78,6 +78,7 @@ export default function Home() {
                 cloudName="kyambalo"
                 publicId="architektura-images/Kyambalo-realizacje_gz7rj3"
                 alt="Przykładowe realizacje"
+                secure={true}
               />
               <p>{t("architektura-wnetrz:link1")}</p>
             </div>
@@ -88,6 +89,7 @@ export default function Home() {
                 cloudName="kyambalo"
                 publicId="architektura-images/kyambalo-probki-materialow_svv2je"
                 alt="Wzory próbek materiału"
+                secure={true}
               />
               <p>{t("architektura-wnetrz:link2")}</p>
             </div>
