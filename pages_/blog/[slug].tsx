@@ -55,11 +55,11 @@ const PostPage = ({ post }) => {
         <link
           rel="canonical"
           href={`https://kyambalo.com/blog/${
-            post !== undefined ? post.title : "post"
+            post !== undefined ? post.title : "prolog"
           }`}
         />
         <meta property="og:locale" content="pl_PL" />
-        <meta property="og:type" content="blog" />
+        <meta property="og:type" content="article" />
         <meta
           property="og:title"
           content="Blog Kyambalo - produkty z kory afrykańskich drzew"
@@ -71,7 +71,7 @@ const PostPage = ({ post }) => {
         <meta
           property="og:url"
           content={`https://kyambalo.com/blog/${
-            post !== undefined ? post.title : "post"
+            post !== undefined ? post.title : "prolog"
           }`}
         />
         <meta
