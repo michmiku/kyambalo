@@ -12,10 +12,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { Image } from "cloudinary-react";
 import React, { useEffect } from "react";
+import Disqus from "../../components/disqusComment";
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  let lowercase = params.slug[0].toLowerCase();
-
   const post = await getSinglePost(params.slug);
 
   return {
@@ -32,16 +31,17 @@ export const getStaticPaths = () => {
   };
 };
 const PostPage = ({ post }) => {
-  useEffect(() => {
-    (window as any).disqus_config = function () {
-      this.page.url = window.location.href;
-      this.page.identifier = post.slug;
-    };
+  // useEffect(() => {
+  //   (window as any).disqus_config = function () {
+  //     this.page.url = window.location.href;
+  //     this.page.identifier = post.slug;
+  //   };
 
-    const script = document.createElement("script");
-    script.src = "https://kyambalo.disqus.com/embed.js";
-    script.setAttribute("data-timestamp", Date.now().toString());
-  });
+  //   const script = document.createElement("script");
+  //   script.src = "https://kyambalo.disqus.com/embed.js";
+  //   script.setAttribute("data-timestamp", Date.now().toString());
+  //   console.log(script);
+  // });
   return (
     <div className={styles.container}>
       <Head>
@@ -153,10 +153,10 @@ const PostPage = ({ post }) => {
           ) : null}
         </section>
         <section className={styles.disqus}>
-          <div id="disqus_thread"></div>
+          <Disqus post={post} />
         </section>
         <section className={styles.section}>
-          <ContactForm />
+          {post !== undefined ? <ContactForm /> : null}
         </section>
       </main>
       <Footer currentSite={"blog/" + (post !== undefined ? post.slug : null)} />
