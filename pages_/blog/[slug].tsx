@@ -14,7 +14,9 @@ import { Image } from "cloudinary-react";
 import React, { useEffect } from "react";
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const post = await getSinglePost(params.slug[0].toLowerCase());
+  let lowercase = params.slug[0].toLowerCase();
+
+  const post = await getSinglePost(params.slug);
 
   return {
     props: {
