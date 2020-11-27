@@ -32,7 +32,7 @@ export const getStaticPaths = () => {
 const PostPage = ({ post }) => {
   useEffect(() => {
     (window as any).disqus_config = function () {
-      this.page.url = window.location.href;
+      this.page.url = window.location.href.toLocaleLowerCase();
       this.page.identifier = post.slug;
     };
 
