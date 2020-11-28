@@ -58,7 +58,7 @@ export default function Home({ publicIds }) {
         />
         <meta
           name="description"
-          content="Zdjęcia nwowo wykonanego showroomu, który prezentuje przykładowe pozycję wykonane z naszej kory."
+          content="Zdjęcia nowo wykonanego showroomu, który prezentuje przykładowe pozycję wykonane z naszej kory."
         />
         <link rel="canonical" href="https://kyambalo.com/showroom/" />
         <meta property="og:locale" content="pl_PL" />
@@ -69,7 +69,7 @@ export default function Home({ publicIds }) {
         />
         <meta
           property="og:description"
-          content="Zdjęcia nwowo wykonanego showroomu, który prezentuje przykładowe pozycję wykonane z naszej kory."
+          content="Zdjęcia nowo wykonanego showroomu, który prezentuje przykładowe pozycję wykonane z naszej kory."
         />
         <meta property="og:url" content="https://kyambalo.com/showroom/" />
         <meta
@@ -80,7 +80,7 @@ export default function Home({ publicIds }) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:description"
-          content="Zdjęcia nwowo wykonanego showroomu, który prezentuje przykładowe pozycję wykonane z naszej kory."
+          content="Zdjęcia nowo wykonanego showroomu, który prezentuje przykładowe pozycję wykonane z naszej kory."
         />
         <meta
           name="twitter:title"
