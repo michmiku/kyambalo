@@ -45,10 +45,10 @@ const PostPage = ({ post }) => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Blog Kyambalo - produkty z kory afrykańskich drzew</title>
+        <title>Kyambalo - {post !== undefined ? post.title : "post"}</title>
         <meta
           name="description"
-          content="Chcesz dowiedzieć się czegoś więcej o naszym materiale i Ugandzie? zapraszam na naszego bloga!"
+          content={`${post !== undefined ? post.excerpt : "excerpt"}`}
         />
         <meta
           name="robots"
@@ -57,23 +57,23 @@ const PostPage = ({ post }) => {
         <link
           rel="canonical"
           href={`https://kyambalo.com/blog/${
-            post !== undefined ? post.title : "prolog"
+            post !== undefined ? post.slug : "post"
           }`}
         />
         <meta property="og:locale" content="pl_PL" />
         <meta property="og:type" content="article" />
         <meta
           property="og:title"
-          content="Blog Kyambalo - produkty z kory afrykańskich drzew"
+          content={`Kyambalo - ${post !== undefined ? post.title : "post"}`}
         />
         <meta
           property="og:description"
-          content="Chcesz dowiedzieć się czegoś więcej o naszym materiale i Ugandzie? zapraszam na naszego bloga!"
+          content={`${post !== undefined ? post.excerpt : "excerpt"}`}
         />
         <meta
           property="og:url"
           content={`https://kyambalo.com/blog/${
-            post !== undefined ? post.title : "prolog"
+            post !== undefined ? post.slug : "post"
           }/`}
         />
         <meta
@@ -88,11 +88,11 @@ const PostPage = ({ post }) => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:description"
-          content="Chcesz dowiedzieć się czegoś więcej o naszym materiale i Ugandzie? zapraszam na naszego bloga!"
+          content={`${post !== undefined ? post.excerpt : "excerpt"}`}
         />
         <meta
           name="twitter:title"
-          content="Blog Kyambalo - produkty z kory afrykańskich drzew"
+          content={`Kyambalo - ${post !== undefined ? post.title : "post"}`}
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
