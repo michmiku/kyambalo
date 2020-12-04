@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next-translate && next dev",
+    "dev": "next-translate && next dev ",
     "build": "next-translate && next build",
     "start": "next start"
   },

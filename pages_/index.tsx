@@ -73,7 +73,7 @@ export default function Home({ publicIds }) {
             name="twitter:title"
             content="Kyambalo - Arcydzieło rąk ludzkich - produkty z kory afrykańskich drzew"
           />
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="shortcut icon" href="/favicon.ico" />
           <link rel="canonical" href="https://kyambalo.com/" />
         </Head>
         <Navbar currentSite="" />

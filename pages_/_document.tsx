@@ -1,6 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { GA_TRACKING_ID } from "../lib/gtag";
-
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
@@ -16,6 +15,7 @@ export default class MyDocument extends Document {
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
           />
+          <link rel="shortcut icon" href="/favicon.ico" />
           <script
             dangerouslySetInnerHTML={{
               __html: `

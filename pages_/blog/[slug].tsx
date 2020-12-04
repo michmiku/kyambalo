@@ -13,10 +13,11 @@ import Link from "next/link";
 import { Image } from "cloudinary-react";
 import React, { useEffect } from "react";
 import Disqus from "../../components/disqusComment";
+import { getPosts } from "../api/posts";
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const post = await getSinglePost(params.slug);
-
+  const slug = await params.slug.toLowerCase();
+  const post = await getSinglePost(slug);
   return {
     props: {
       post,
@@ -24,9 +25,13 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     revalidate: 10,
   };
 };
-export const getStaticPaths = () => {
+export const getStaticPaths = async () => {
+  const posts = await getPosts();
+  const paths = posts.map((post) => ({
+    params: { slug: post.slug },
+  }));
   return {
-    paths: [],
+    paths,
     fallback: true,
   };
 };

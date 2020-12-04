@@ -12,6 +12,7 @@ Router.events.on("routeChangeComplete", (url) => gtag.pageview(url));
 const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
   <Head>
     <meta name="viewport" content="viewport-fit=cover" />
+    <link rel="shortcut icon" href="/favicon.ico" />
   </Head>;
   return (
     <React.Fragment>

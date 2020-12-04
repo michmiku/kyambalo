@@ -26,7 +26,6 @@ export const getStaticProps: GetStaticProps = async (context) => {
 };
 const Blog: React.FC<{ posts: any }> = ({ posts }) => {
   const { t, lang } = useTranslation();
-  console.log(posts);
   return (
     <div className={styles.container}>
       <Head>
