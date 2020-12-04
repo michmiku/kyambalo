@@ -16,8 +16,7 @@ import Disqus from "../../components/disqusComment";
 import { getPosts } from "../api/posts";
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const slug =
-    (await typeof params.slug) === "string" && params.slug.toLowerCase();
+  const slug = await params.slug.toString().toLowerCase();
   const post = await getSinglePost(slug);
   return {
     props: {
