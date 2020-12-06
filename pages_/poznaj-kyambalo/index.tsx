@@ -22,6 +22,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
     .execute();
   const publicIds = resources.map((file) => file.public_id);
   return {
+    revalidate: 10,
     props: {
       publicIds,
     },
