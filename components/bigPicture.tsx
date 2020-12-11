@@ -44,7 +44,6 @@ export default function Images({ file, alt, path, handleClick, files, id }) {
           handleClick("", "", false);
         }}
       />
-      image, alt, path, true, key
       <FontAwesomeIcon
         icon={faChevronRight}
         className={styles.rightArrow}
