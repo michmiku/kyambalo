@@ -1,8 +1,14 @@
 .header {
     height: 160px;
     width: 100vw;
+    overflow: hidden;
 
-    .img {
+    img {
+        width: 100vw;
+        min-width: 1200px;
+    }
+
+    .title {
         width: 100vw;
         height: 160px;
         display: flex;

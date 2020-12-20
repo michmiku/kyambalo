@@ -132,9 +132,8 @@ export default function Home({ publicIds }) {
             handleClick={handleClick}
           />
         </section>
-        <ContactForm />
       </main>
-
+      <ContactForm />
       <Footer currentSite="nasz-material" />
     </div>
   );

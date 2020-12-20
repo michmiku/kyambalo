@@ -95,9 +95,8 @@ export default function Home() {
             </div>
           </Link>
         </section>
-        <ContactForm />
       </main>
-
+      <ContactForm />
       <Footer currentSite="architektura-wnetrz" />
     </div>
   );

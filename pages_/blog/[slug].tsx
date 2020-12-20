@@ -32,7 +32,7 @@ export const getStaticPaths = async () => {
   }));
   return {
     paths,
-    fallback: true,
+    fallback: false,
   };
 };
 const PostPage = ({ post }) => {
@@ -160,10 +160,8 @@ const PostPage = ({ post }) => {
         <section className={styles.disqus}>
           {post !== undefined ? <Disqus post={post} /> : null}
         </section>
-        <section className={styles.section}>
-          <ContactForm />
-        </section>
       </main>
+      <ContactForm />
       <Footer currentSite={"blog/" + (post !== undefined ? post.slug : null)} />
     </div>
   );

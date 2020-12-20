@@ -4,7 +4,7 @@ import Navbar from "../components/navbar";
 import Section from "../components/section";
 import ContactForm from "../components/contactForm";
 import Footer from "../components/footer";
-import Header from "../components/mainHeader";
+import Header from "../components/subHeader";
 import { GetStaticProps } from "next";
 import Socials from "../components/socialMedia";
 import useTranslation from "next-translate/useTranslation";
@@ -43,7 +43,7 @@ export default function Home({ publicIds }) {
           />
           <meta
             name="description"
-            content="Kyambalo to w 100% naturalny materiał powstały w wyniku przetwarzania zewnętrznej kory drzewa Mutuba. Poznaj nasze materiały i produkty. Zapraszamy."
+            content="Niestety nie ma tu tego co szukasz. Spróbuj przjeść do innej sekcji naszej strony."
           ></meta>
           <meta
             name="robots"
@@ -57,7 +57,7 @@ export default function Home({ publicIds }) {
           />
           <meta
             property="og:description"
-            content="Kyambalo to w 100% naturalny materiał powstały w wyniku przetwarzania zewnętrznej kory drzewa Mutuba. Poznaj nasze materiały i produkty. Zapraszamy."
+            content="Niestety nie ma tu tego co szukasz. Spróbuj przjeść do innej sekcji naszej strony."
           />
           <meta property="og:url" content="https://kyambalo.com/" />
           <meta
@@ -68,7 +68,7 @@ export default function Home({ publicIds }) {
           <meta name="twitter:card" content="summary_large_image" />
           <meta
             name="twitter:description"
-            content="Kyambalo to w 100% naturalny materiał powstały w wyniku przetwarzania zewnętrznej kory drzewa Mutuba. Poznaj nasze materiały i produkty. Zapraszamy."
+            content="Niestety nie ma tu tego co szukasz. Spróbuj przjeść do innej sekcji naszej strony."
           />
           <meta
             name="twitter:title"
@@ -78,38 +78,20 @@ export default function Home({ publicIds }) {
           <link rel="canonical" href="https://kyambalo.com/" />
         </Head>
         <Navbar currentSite="" />
-        <Header files={publicIds} path="/slider-images/" />
+        <Header img="bg4_vupemt" tytul="404" />
         <main className={styles.main}>
           <Socials />
-          <section className={styles.unia}>
-            <Image
-              cloudName="kyambalo"
-              publicId="shared-images/unia_rtiaip"
-              alt="unia"
-              secure={true}
-            />
+          <section
+            style={{
+              minHeight: "300px",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+            }}
+          >
+            <h1 style={{ marginBottom: "30px" }}>{t("common:404")}</h1>
+            <p>{t("common:site")}</p>
           </section>
-          <Section
-            naglowek={t("home:section1.naglowek")}
-            paragraf1={t("home:section1.paragraf1")}
-            paragraf2={t("home:section1.paragraf2")}
-            paragraf3={t("home:section1.paragraf3")}
-            img="home-images/IMG_4945_cfmfb3"
-          />
-          <Section
-            naglowek={t("home:section2.naglowek")}
-            paragraf1={t("home:section2.paragraf1")}
-            paragraf2={t("home:section2.paragraf2")}
-            paragraf3={t("home:section2.paragraf3")}
-            img="home-images/IMG_4783_mybzbr"
-          />
-          <Section
-            naglowek={t("home:section3.naglowek")}
-            paragraf1={t("home:section3.paragraf1")}
-            paragraf2=""
-            paragraf3=""
-            img="home-images/MZ_043_mzhoha"
-          />
         </main>
         <ContactForm />
         <Footer currentSite="" />

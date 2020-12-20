@@ -486,10 +486,8 @@ export default function Home({ fileNames }) {
             ograniczeń.
           </p>
         </section>
-
-        <ContactForm />
       </main>
-
+      <ContactForm />
       <Footer currentSite="polityka-prywatnosci" />
     </div>
   );

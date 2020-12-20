@@ -60,10 +60,8 @@ export default function Home() {
             <Map />
           </div>
         </section>
-        <section className={styles.section}>
-          <ContactForm />
-        </section>
       </main>
+      <ContactForm />
       <Footer currentSite="kontakt" />
     </div>
   );

@@ -12,7 +12,7 @@ export default function Header({ img, tytul }) {
         preload="true"
         secure={true}
       />
-      <div className={styles.img}>
+      <div className={styles.title}>
         <h1>{tytul}</h1>
       </div>
     </header>

@@ -110,10 +110,8 @@ const Blog: React.FC<{ posts: any }> = ({ posts }) => {
             </Link>
           ))}
         </section>
-        <section className={styles.section}>
-          <ContactForm />
-        </section>
       </main>
+      <ContactForm />
       <Footer currentSite="blog" />
     </div>
   );

@@ -159,10 +159,8 @@ export default function Home({ publicIds }) {
               handleClick={handleClick}
             />
           </section>
-
-          <ContactForm />
         </main>
-
+        <ContactForm />
         <Footer currentSite="poznaj-kyambalo" />
       </div>
     </>

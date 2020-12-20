@@ -117,11 +117,8 @@ export default function Home({ publicIds }) {
             handleClick={handleClick}
           />
         </section>
-        <section className={styles.section}>
-          <ContactForm />
-        </section>
       </main>
-
+      <ContactForm />
       <Footer currentSite="wzory-probek-materialu" />
     </div>
   );

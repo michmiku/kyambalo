@@ -3,6 +3,8 @@
     padding: 20px 10px;
     grid-template-columns: repeat(12, 1fr);
     background-color: rgb(224, 224, 224);
+    margin-top: auto;
+    width: 100vw;
 
     .info {
         grid-column: span 12;
