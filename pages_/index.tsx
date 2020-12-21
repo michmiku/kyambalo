@@ -91,6 +91,7 @@ export default function Home({ publicIds }) {
           </section>
           <Section
             naglowek={t("home:section1.naglowek")}
+            naglowek1={t("home:section1.naglowek2")}
             paragraf1={t("home:section1.paragraf1")}
             paragraf2={t("home:section1.paragraf2")}
             paragraf3={t("home:section1.paragraf3")}
@@ -98,6 +99,7 @@ export default function Home({ publicIds }) {
           />
           <Section
             naglowek={t("home:section2.naglowek")}
+            naglowek1=""
             paragraf1={t("home:section2.paragraf1")}
             paragraf2={t("home:section2.paragraf2")}
             paragraf3={t("home:section2.paragraf3")}
@@ -105,6 +107,7 @@ export default function Home({ publicIds }) {
           />
           <Section
             naglowek={t("home:section3.naglowek")}
+            naglowek1=""
             paragraf1={t("home:section3.paragraf1")}
             paragraf2=""
             paragraf3=""

@@ -5,6 +5,7 @@ import useTranslation from "next-translate/useTranslation";
 
 export default function Section({
   naglowek,
+  naglowek1,
   paragraf1,
   paragraf2,
   paragraf3,
@@ -15,6 +16,7 @@ export default function Section({
   return (
     <section className={styles.section}>
       <h4>{naglowek}</h4>
+      <h4>{naglowek1}</h4>
       <p>{paragraf1}</p>
       {paragraf2 === "" ? null : <p>{paragraf2}</p>}
       {paragraf3 === "" ? null : <p>{paragraf3}</p>}

@@ -1,16 +1,20 @@
 import emailjs from "emailjs-com";
 import styles from "../styles/contactForm.module.scss";
 import useTranslation from "next-translate/useTranslation";
+import { useState } from "react";
 
 export default function ContactUs() {
   const { t, lang } = useTranslation();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   function sendEmail(e) {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        "service_d3vtwmq",
+        "service_nfw0r06",
         "template_olhynrc",
         e.target,
         "user_L725slcip99QgrrJHAWux"
@@ -18,9 +22,14 @@ export default function ContactUs() {
       .then(
         (result) => {
           console.log(result.text);
+          alert(t("common:contact"));
+          setName("");
+          setEmail("");
+          setMessage("");
         },
         (error) => {
           console.log(error.text);
+          alert(error.text);
         }
       );
   }
@@ -48,15 +57,30 @@ export default function ContactUs() {
           type="text"
           name="user_name"
           placeholder={t("common:placeholder1")}
+          value={name}
+          onChange={(e) => {
+            setName(e.target.value);
+          }}
         />
         <br />
         <input
           type="email"
           name="user_email"
           placeholder={t("common:placeholder2")}
+          value={email}
+          onChange={(e) => {
+            setEmail(e.target.value);
+          }}
         />
         <br />
-        <textarea name="message" placeholder={t("common:placeholder3")} />
+        <textarea
+          name="message"
+          placeholder={t("common:placeholder3")}
+          value={message}
+          onChange={(e) => {
+            setMessage(e.target.value);
+          }}
+        />
         <br />
         <p>{t("common:disclaimer1")}</p>
         <p>{t("common:disclaimer2")}</p>
