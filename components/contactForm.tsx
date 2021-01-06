@@ -39,10 +39,18 @@ export default function ContactUs() {
       <div className={styles.info}>
         <p>{t("common:paragraf1")}</p>
         <p>{t("common:paragraf2")}</p>
+        <p style={{ margin: 0, fontWeight: "bold" }}>Dariusz Małek</p>
         <a href="tel:608382988">+48 608 382 988</a>
         <br />
         <a href="mailto:kontakt@kyambalo.com">kontakt@kyambalo.com</a>
-        <p>{t("common:paragraf3")}</p>
+        <p style={{ margin: "0", marginTop: "20px", fontWeight: "bold" }}>
+          Product manager
+        </p>
+        <p style={{ margin: "0", fontWeight: "bold" }}>Tomasz Bryk</p>
+        <a href="tel:728549587">+48 728 549 587</a>
+        <br />
+        <a href="mailto:tomasz.bryk@kyambalo.com">tomasz.bryk@kyambalo.com</a>
+        <p style={{ marginTop: "20px" }}>{t("common:paragraf3")}</p>
         <strong>{t("common:paragraf4")}</strong>
         <br />
         <br />
