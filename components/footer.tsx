@@ -37,11 +37,11 @@ export default function Footer({ currentSite }) {
             {t("common:link8")}
           </li>
         </Link>
-        <Link href="/blog">
+        {/* <Link href="/blog">
           <li className={currentSite === "blog" ? styles.selected : null}>
             Blog
           </li>
-        </Link>
+        </Link> */}
         <Link href="/kontakt">
           <li className={currentSite === "kontakt" ? styles.selected : null}>
             {t("common:link6")}

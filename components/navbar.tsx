@@ -100,11 +100,11 @@ function Navbar({ currentSite }: any) {
               </span>
             </li>
           </Link>
-          <Link href="/blog">
+          {/* <Link href="/blog">
             <li className={currentSite === "blog" ? styles.selected : null}>
               <span className={`${styles.hover} ${styles.hover3}`}>Blog</span>
             </li>
-          </Link>
+          </Link> */}
           <Link href="/kontakt">
             <li className={currentSite === "kontakt" ? styles.selected : null}>
               <span className={`${styles.hover} ${styles.hover3}`}>

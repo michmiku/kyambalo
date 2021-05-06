@@ -40,11 +40,11 @@
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
     </url>
-    <url>
+    <!-- <url>
         <loc>https://kyambalo.com/blog</loc>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
-    </url>
+    </url> -->
     <url>
         <loc>https://kyambalo.com/kontakt</loc>
         <changefreq>daily</changefreq>
@@ -55,9 +55,9 @@
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
     </url>
-    <url>
+    <!-- <url>
         <loc>https://kyambalo.com/blog/prolog</loc>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
-    </url>
+    </url> -->
 </urlset>
