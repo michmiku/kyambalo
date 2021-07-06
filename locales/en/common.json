@@ -21,5 +21,7 @@
     "placeholder3": "ENTER YOUR MESSAGE",
     "button": "SUBMIT APPLICATION",
     "disclaimer1": "The administrator of your personal data is F.H.U. TIP-TOP Dariusz Małek placed in Krakowie, Spółdzielców 3 (street), (postal code) 30-682 Kraków.",
-    "disclaimer2": "We are processing your personal data only to answer the questions asked in the form. The basis of processing the data is realising the interest of the administrator by communicating with users of this site, which is legally agreed upon. Your data will not be processed any longer than it is required to answer the question and afterwards may only be processed for a period of expiration of possible claims."
+    "disclaimer2": "We are processing your personal data only to answer the questions asked in the form. The basis of processing the data is realising the interest of the administrator by communicating with users of this site, which is legally agreed upon. Your data will not be processed any longer than it is required to answer the question and afterwards may only be processed for a period of expiration of possible claims.",
+    "ukraineRep": "Representative for Ukraine: ",
+    "ukrRepAddress": "33-335 Nawojowa, Zagórze 52 street"
 }

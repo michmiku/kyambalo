@@ -50,11 +50,31 @@ export default function ContactUs() {
         <a href="tel:728549587">+48 728 549 587</a>
         <br />
         <a href="mailto:tomasz.bryk@kyambalo.com">tomasz.bryk@kyambalo.com</a>
+        <p style={{ marginTop: "20px", fontWeight: "bold" }}>
+          {t("common:ukraineRep")}
+        </p>
+        <p>Aspect Polska Sp. z o.o</p>
+        <p>{t("common:ukrRepAddress")}</p>
+        <span style={{ display: "flex", flexDirection: "row" }}>
+          tel:{" "}
+          <a href="tel:505998983" style={{ margin: "0 5px" }}>
+            505998983
+          </a>
+          <a href="tel:508095316" style={{ marginLeft: "10px" }}>
+            508095316
+          </a>
+        </span>
+        <a href="mailto:krzysztof.kmak@gmail.com">krzysztof.kmak@gmail.com</a>
+        <br />
+        <a href="mailto:aspect.polska@gmail.com ">aspect.polska@gmail.com </a>
+        <br />
+        <a href="http://aspect.com.ua" target="_blank">
+          http://aspect.com.ua
+        </a>
         <p style={{ marginTop: "20px" }}>{t("common:paragraf3")}</p>
         <strong>{t("common:paragraf4")}</strong>
         <br />
         <br />
-
         <p>FHU TIP-TOP DARIUSZ MAŁEK</p>
         <p>NIP: 6791410469</p>
         <p>Regon: 350771686</p>
